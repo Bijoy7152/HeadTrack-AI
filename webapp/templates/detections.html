@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Detections — HeadTrack AI{% endblock %}
+{% block content %}
+{% set active = 'detections' %}
+{% include "_job_nav.html" %}
+<div class="row g-3 mb-4">
+  <div class="col"><div class="card metric-card"><div class="value">{{ total }}</div><div class="label">Total Detections</div></div></div>
+  {% for cls, n in counts.items() %}
+  <div class="col"><div class="card metric-card"><div class="value">{{ n }}</div><div class="label">{{ cls|capitalize }}</div></div></div>
+  {% endfor %}
+</div>
+<div class="card p-3">
+<h6>Sample detections (first 200 rows)</h6>
+<div class="table-responsive" style="max-height:600px; overflow-y:auto;">
+<table class="table table-sm">
+  <thead><tr><th>Frame</th><th>Class</th><th>Conf</th><th>x1</th><th>y1</th><th>x2</th><th>y2</th></tr></thead>
+  <tbody>
+  {% for d in sample %}
+    <tr><td>{{ d.frame_number }}</td><td>{{ d.class_name }}</td><td>{{ '%.2f'|format(d.confidence) }}</td>
+        <td>{{ '%.0f'|format(d.x1) }}</td><td>{{ '%.0f'|format(d.y1) }}</td><td>{{ '%.0f'|format(d.x2) }}</td><td>{{ '%.0f'|format(d.y2) }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+</div>
+{% endblock %}

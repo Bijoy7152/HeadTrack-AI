@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Player Exposure Summary — HeadTrack AI{% endblock %}
+{% block content %}
+{% set active = 'players' %}
+{% include "_job_nav.html" %}
+
+<div class="row g-3 mb-4">
+  <div class="col"><div class="card metric-card"><div class="value">{{ job.stats.total_players_tracked if job.stats else 0 }}</div><div class="label">Players Tracked</div></div></div>
+  <div class="col"><div class="card metric-card"><div class="value">{{ job.stats.total_headers_detected if job.stats else 0 }}</div><div class="label">Headers Detected</div></div></div>
+  <div class="col"><div class="card metric-card"><div class="value">{{ job.stats.ambiguous_events if job.stats else 0 }}</div><div class="label">Ambiguous Events</div></div></div>
+  <div class="col"><div class="card metric-card"><div class="value">{{ job.stats.highest_header_count if job.stats else 0 }}</div><div class="label">Highest Header Count</div></div></div>
+  <div class="col"><div class="card metric-card"><div class="value">{{ job.stats.avg_headers_per_player if job.stats else 0 }}</div><div class="label">Avg Headers / Player</div></div></div>
+  <div class="col"><div class="card metric-card"><div class="value">{{ '%.1f'|format(job.stats.processing_seconds) if job.stats else 0 }}s</div><div class="label">Processing Time</div></div></div>
+</div>
+
+{% if not players %}
+<div class="card p-4 text-center text-muted">No players with confirmed headers in this video.</div>
+{% else %}
+<div class="card p-3 mb-4">
+  <canvas id="headerChart" height="80"></canvas>
+</div>
+
+<div class="table-responsive">
+<table class="table table-hover align-middle">
+  <thead><tr>
+    <th>Track ID</th><th>Headers</th><th>1st Half</th><th>2nd Half</th>
+    <th>Shortest Interval</th><th>Ambiguous</th><th>Review Priority</th><th></th>
+  </tr></thead>
+  <tbody>
+  {% for p in players %}
+    <tr>
+      <td>{{ p.track_id }}</td>
+      <td>{{ p.total_headers }}</td>
+      <td>{{ p.first_half_headers }}</td>
+      <td>{{ p.second_half_headers }}</td>
+      <td>{{ (p.shortest_interval_sec ~ ' sec') if p.shortest_interval_sec is not none else '—' }}</td>
+      <td>{{ p.ambiguous_events }}</td>
+      <td><span class="badge badge-priority-{{ p.review_priority }}">{{ p.review_priority|capitalize }}</span></td>
+      <td><a href="/jobs/{{ job.id }}/players/{{ p.track_id }}" class="btn btn-sm btn-outline-light">Detail</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+
+<script>
+const labels = {{ players|map(attribute='track_id')|list|tojson }};
+const data = {{ players|map(attribute='total_headers')|list|tojson }};
+new Chart(document.getElementById('headerChart'), {
+  type: 'bar',
+  data: { labels: labels.map(t => 'Track ' + t), datasets: [{ label: 'Total Headers', data: data, backgroundColor: '#7aa2ff' }] },
+  options: { plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#9aa4bf' } }, y: { ticks: { color: '#9aa4bf' } } } }
+});
+</script>
+{% endif %}
+{% endblock %}

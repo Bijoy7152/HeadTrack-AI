@@ -1,0 +1,129 @@
+{
+  "detection_model_comparison": [
+    {
+      "model": "yolov8m",
+      "precision": 0.8158,
+      "recall": 0.7476,
+      "f1": 0.7802,
+      "mAP50": 0.804,
+      "mAP50-95": 0.6244,
+      "FPS": 36.24,
+      "params_millions": 25.84
+    },
+    {
+      "model": "yolov8s",
+      "precision": 0.7901,
+      "recall": 0.7092,
+      "f1": 0.7475,
+      "mAP50": 0.7637,
+      "mAP50-95": 0.5763,
+      "FPS": 71.92,
+      "params_millions": 11.13
+    }
+  ],
+  "detection_class_wise": [
+    {
+      "model": "yolov8m",
+      "class_id": 0,
+      "class_name": "player",
+      "precision": 0.9083,
+      "recall": 0.912,
+      "f1": 0.9101,
+      "AP50": 0.9553,
+      "mAP50-95": 0.869
+    },
+    {
+      "model": "yolov8m",
+      "class_id": 1,
+      "class_name": "ball",
+      "precision": 0.6799,
+      "recall": 0.6163,
+      "f1": 0.6465,
+      "AP50": 0.6554,
+      "mAP50-95": 0.5452
+    },
+    {
+      "model": "yolov8m",
+      "class_id": 2,
+      "class_name": "head",
+      "precision": 0.8592,
+      "recall": 0.7145,
+      "f1": 0.7802,
+      "AP50": 0.8013,
+      "mAP50-95": 0.459
+    },
+    {
+      "model": "yolov8s",
+      "class_id": 0,
+      "class_name": "player",
+      "precision": 0.9102,
+      "recall": 0.9026,
+      "f1": 0.9064,
+      "AP50": 0.9447,
+      "mAP50-95": 0.8423
+    },
+    {
+      "model": "yolov8s",
+      "class_id": 1,
+      "class_name": "ball",
+      "precision": 0.653,
+      "recall": 0.5801,
+      "f1": 0.6144,
+      "AP50": 0.6122,
+      "mAP50-95": 0.5032
+    },
+    {
+      "model": "yolov8s",
+      "class_id": 2,
+      "class_name": "head",
+      "precision": 0.8072,
+      "recall": 0.645,
+      "f1": 0.717,
+      "AP50": 0.7343,
+      "mAP50-95": 0.3834
+    }
+  ],
+  "tracking_proxy": {
+    "videos_analyzed": 208,
+    "total_tracks": 10242,
+    "avg_lifespan_frames": 109.1,
+    "total_candidate_id_switches": 1945
+  },
+  "header_detection_proxy": {
+    "tp": 29,
+    "fp": 13,
+    "fn": 77,
+    "precision": 0.6904761904761905,
+    "recall": 0.27358490566037735,
+    "f1": 0.39189189189189183
+  },
+  "attribution_evaluation": {
+    "reviewed": 83,
+    "total_events": 83,
+    "correct": 41,
+    "incorrect": 20,
+    "ambiguous": 22,
+    "accuracy": 0.6721311475409836
+  },
+  "llm_verification": {
+    "n_reports": 72,
+    "all_checks_passed_rate": 1.0,
+    "hallucination_free_rate": 1.0
+  },
+  "checklist": {
+    "1. Trained player-ball-head detector": true,
+    "2. Test-set detection results": true,
+    "3. Full-video inference pipeline": true,
+    "4. Player tracking system": true,
+    "5. Ball trajectory tracking": true,
+    "6. Head-player association module": true,
+    "7. Header detection algorithm": true,
+    "8. Header performer attribution": true,
+    "9. Ambiguity detection": true,
+    "10. Player-wise header exposure statistics": true,
+    "11. Structured CSV/JSON dataset": true,
+    "12. LLM-generated exposure reports": true,
+    "13. End-to-end evaluation": true,
+    "14. Error analysis": true
+  }
+}

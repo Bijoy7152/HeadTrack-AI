@@ -1,0 +1,13 @@
+<div class="page-header pb-0">
+  <div class="job-title">{{ job.filename }} <small>Job {{ job.id }}</small></div>
+  <ul class="nav nav-pills mt-2">
+    <li class="nav-item"><a class="nav-link {% if active=='players' %}active{% endif %}" href="/jobs/{{ job.id }}/players"><i class="bi bi-people me-1"></i>Player Summary</a></li>
+    <li class="nav-item"><a class="nav-link {% if active=='events' %}active{% endif %}" href="/jobs/{{ job.id }}/events"><i class="bi bi-clock-history me-1"></i>Header Events</a></li>
+    <li class="nav-item"><a class="nav-link {% if active=='tracking' %}active{% endif %}" href="/jobs/{{ job.id }}/tracking"><i class="bi bi-person-bounding-box me-1"></i>Player Tracking</a></li>
+    <li class="nav-item"><a class="nav-link {% if active=='ball' %}active{% endif %}" href="/jobs/{{ job.id }}/ball"><i class="bi bi-circle me-1"></i>Ball Tracking</a></li>
+    <li class="nav-item"><a class="nav-link {% if active=='detections' %}active{% endif %}" href="/jobs/{{ job.id }}/detections"><i class="bi bi-bounding-box-circles me-1"></i>Detections</a></li>
+    <li class="nav-item"><a class="nav-link {% if active=='ambiguous' %}active{% endif %}" href="/jobs/{{ job.id }}/ambiguous"><i class="bi bi-exclamation-triangle me-1"></i>Ambiguous Review</a></li>
+    <li class="nav-item"><a class="nav-link {% if active=='reports' %}active{% endif %}" href="/jobs/{{ job.id }}/reports"><i class="bi bi-robot me-1"></i>LLM Reports</a></li>
+    <li class="nav-item"><a class="nav-link {% if active=='export' %}active{% endif %}" href="/jobs/{{ job.id }}/export"><i class="bi bi-download me-1"></i>Export</a></li>
+  </ul>
+</div>

@@ -1,0 +1,15 @@
+**Player Header Exposure Report**
+
+**Match/Player Identification:**
+Match ID: Header_h72, Player ID: 14279
+
+**Header Counts:**
+Total Headers: 2, First Half: 2, Second Half: 0
+
+The player had a header every 0.1 seconds, with a notable clustering of headers in the last 5, 10, and 15 minutes, with 2 headers in each interval.
+
+**Ambiguous Events:** None
+
+**Review Priority:** moderate
+
+This report is a research/review summary of player header exposure, based on video-derived analytics data. It does not determine whether a concussion or brain injury occurred.

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Processing — HeadTrack AI{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-7">
+    <div class="card p-4">
+      <h4>{{ job.filename }}</h4>
+      <p class="text-muted">Job ID: {{ job.id }}</p>
+      <div id="statusBox" class="stage-log mb-3">Starting…</div>
+      <div class="progress mb-3" style="height: 6px;">
+        <div id="bar" class="progress-bar progress-bar-striped progress-bar-animated" style="width: 15%"></div>
+      </div>
+      <div id="doneLink" style="display:none;">
+        <a class="btn btn-success" id="resultsBtn" href="#">View Results <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const jobId = "{{ job.id }}";
+const stages = ["queued", "Detecting player/ball/head", "Header contact detection", "Player exposure aggregation",
+                "Exporting structured", "Generating LLM"];
+async function poll() {
+  const resp = await fetch(`/jobs/${jobId}/api/status`);
+  const data = await resp.json();
+  const box = document.getElementById('statusBox');
+  const bar = document.getElementById('bar');
+  if (data.status === 'error') {
+    box.innerHTML = `<span class="text-danger">Error: ${data.error}</span>`;
+    bar.classList.remove('progress-bar-animated');
+    bar.classList.add('bg-danger');
+    return;
+  }
+  box.textContent = data.stage || data.status;
+  if (data.status === 'done') {
+    bar.style.width = '100%';
+    bar.classList.remove('progress-bar-animated');
+    document.getElementById('doneLink').style.display = 'block';
+    document.getElementById('resultsBtn').href = `/jobs/${jobId}/players`;
+    return;
+  }
+  let idx = stages.findIndex(s => (data.stage || '').includes(s));
+  bar.style.width = Math.max(15, (idx + 1) / stages.length * 100) + '%';
+  setTimeout(poll, 1500);
+}
+poll();
+</script>
+{% endblock %}

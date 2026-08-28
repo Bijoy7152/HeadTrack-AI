@@ -1,0 +1,18 @@
+**Player Header Exposure Report**
+
+**Match/Player Identification:**
+Match ID: Header_h67
+Player ID: 13122
+
+**Header Counts:**
+Total Headers: 1
+First Half: 1
+Second Half: 0
+
+The player had a single header event in the match. The headers were clustered in the last 5, 10, and 15 minutes, with 1 header in each interval.
+
+**Ambiguous Events:** None
+
+**Review Priority:** low
+
+This report is a research/review summary of player exposure data, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred.

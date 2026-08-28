@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Header Events — HeadTrack AI{% endblock %}
+{% block content %}
+{% set active = 'events' %}
+{% include "_job_nav.html" %}
+
+<div class="card p-3 mb-4">
+  <video id="vid" src="{{ video_url }}" controls style="width:100%; max-height: 480px; background:#000;"></video>
+  <div class="mt-2">
+    <small class="text-muted">Click a marker to jump the video to that header event.</small>
+    <div class="mt-2 d-flex flex-wrap gap-2" id="markers">
+    {% for e in events %}
+      <button class="btn btn-sm {% if e.ambiguous %}btn-outline-warning{% else %}btn-outline-info{% endif %}"
+              onclick="document.getElementById('vid').currentTime = {{ e.timestamp_sec }};">
+        {{ e.event_id }} · {{ '%.1f'|format(e.timestamp_sec) }}s
+      </button>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="table-responsive">
+<table class="table table-hover align-middle">
+  <thead><tr>
+    <th>Event ID</th><th>Timestamp (s)</th><th>Track ID</th><th>Ball-Head Distance (px)</th>
+    <th>Attribution Confidence</th><th>Ambiguous</th><th>Human Decision</th>
+  </tr></thead>
+  <tbody>
+  {% for e in events %}
+    <tr>
+      <td>{{ e.event_id }}</td>
+      <td>{{ '%.2f'|format(e.timestamp_sec) }}</td>
+      <td>{{ e.track_id }}</td>
+      <td>{{ e.ball_head_distance_px }}</td>
+      <td>{{ e.attribution_confidence }}</td>
+      <td>{% if e.ambiguous %}<i class="bi bi-exclamation-triangle text-warning"></i>{% endif %}</td>
+      <td>{{ e.human_decision or '—' }}</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="7" class="text-center text-muted">No events found.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Track {{ player.track_id }} — HeadTrack AI{% endblock %}
+{% block content %}
+{% set active = 'players' %}
+{% include "_job_nav.html" %}
+
+<div class="row g-3">
+  <div class="col-md-4">
+    <div class="card p-4">
+      <h5>Player Track ID: {{ player.track_id }}</h5>
+      <table class="table table-sm mt-3">
+        <tr><td>Total Headers</td><td><b>{{ player.total_headers }}</b></td></tr>
+        <tr><td>First Half</td><td>{{ player.first_half_headers }}</td></tr>
+        <tr><td>Second Half</td><td>{{ player.second_half_headers }}</td></tr>
+        <tr><td>Shortest Interval</td><td>{{ (player.shortest_interval_sec ~ ' sec') if player.shortest_interval_sec is not none else '—' }}</td></tr>
+        <tr><td>Headers / last 5 min</td><td>{{ player.headers_last_5_min }}</td></tr>
+        <tr><td>Headers / last 10 min</td><td>{{ player.headers_last_10_min }}</td></tr>
+        <tr><td>Headers / last 15 min</td><td>{{ player.headers_last_15_min }}</td></tr>
+        <tr><td>Ambiguous Events</td><td>{{ player.ambiguous_events }}</td></tr>
+        <tr><td>Review Priority</td><td><span class="badge badge-priority-{{ player.review_priority }}">{{ player.review_priority|capitalize }}</span></td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card p-4 mb-3">
+      <h6>Header Timeline</h6>
+      {% if events %}
+        <div class="d-flex flex-wrap gap-2 mt-2">
+        {% for e in events %}
+          <span class="badge {% if e.ambiguous %}bg-secondary{% else %}bg-primary{% endif %} p-2"
+                title="Confidence {{ '%.2f'|format(e.confidence) }}">
+            {{ e.timestamp_mmss }}{% if e.ambiguous %} ⚠{% endif %}
+          </span>
+        {% endfor %}
+        </div>
+      {% else %}
+        <p class="text-muted">No events.</p>
+      {% endif %}
+    </div>
+
+    <div class="card p-4">
+      <h6><i class="bi bi-robot"></i> LLM-Generated Exposure Report</h6>
+      {% if report_text %}
+        <pre class="report-text mt-2">{{ report_text }}</pre>
+      {% else %}
+        <p class="text-muted">No report generated for this player.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

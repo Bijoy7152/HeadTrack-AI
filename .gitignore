@@ -1,0 +1,55 @@
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment / secrets
+.env
+.env.local
+
+# Webapp runtime data (uploaded videos, per-job pipeline outputs, local DB)
+webapp/jobs/
+webapp/uploads/
+webapp/headtrack.db
+webapp/*.db
+
+# Raw and generated data (large, regenerable from videos/ or re-downloadable)
+videos/
+extracted_frames/
+auto_labels/
+roboflow_export/
+dataset/
+rejected_frames/
+
+# Pretrained / downloaded model weights
+*.pt
+*.onnx
+
+# Training & inference artifacts (large binaries; keep only small CSV/summary outputs)
+models/checkpoints/*/best.pt
+models/checkpoints/*/last.pt
+models/checkpoints/*/figures/
+models/checkpoints/*_run/
+outputs/preview_player_head/
+outputs/preview_ball/
+outputs/video_processing/
+outputs/evaluation/*_val/
+
+# OS / editor cruft
+.DS_Store
+*.swp
+
+# Ultralytics stray run directories
+runs/
+
+# LaTeX build artifacts (regenerable; contain machine-specific absolute paths)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz

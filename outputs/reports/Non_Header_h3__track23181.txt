@@ -1,0 +1,16 @@
+**Player Header Exposure Report**
+
+**Match/Player Identification:**
+Player ID: 23181, Match ID: Non_Header_h3
+
+**Header Counts:**
+Total Headers: 1, First Half: 1, Second Half: 0
+
+**Header Clustering:**
+No notable clustering of headers within 5, 10, or 15 minutes.
+
+**Ambiguous Events:** None.
+
+**Review Priority:** low
+
+This report is a research/review summary of player exposure data, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred.

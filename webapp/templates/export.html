@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Export — HeadTrack AI{% endblock %}
+{% block content %}
+{% set active = 'export' %}
+{% include "_job_nav.html" %}
+<div class="row g-3">
+  <div class="col-md-4">
+    <div class="card p-3">
+      <h6>CSV</h6>
+      <div class="list-group">
+        {% for name in ["detections","player_tracks","ball_tracks","head_player_associations","header_events","player_summary"] %}
+        <a class="list-group-item list-group-item-action"
+           href="/jobs/{{ job.id }}/export/csv/{{ name }}">{{ name }}.csv</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card p-3">
+      <h6>JSON</h6>
+      <p class="text-muted small">Full structured export: analysis metadata + player summary (schema 6.2), ready for downstream tools or the LLM stage.</p>
+      <a class="btn btn-outline-light" href="/jobs/{{ job.id }}/export/json">Download JSON</a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card p-3">
+      <h6>PDF</h6>
+      <p class="text-muted small">One-page player exposure summary table for the whole video.</p>
+      <a class="btn btn-outline-light" href="/jobs/{{ job.id }}/export/pdf">Download PDF</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+**Player Header Exposure Report**
+
+**Match/Player Identification:**
+Player ID: 18721, Match ID: Header_h99
+
+**Header Counts:**
+Total Headers: 2, First Half: 2, Second Half: 0
+
+**Header Clustering:**
+The shortest interval between headers was 0.12 seconds, with notable clustering in the last 5, 10, and 15 minutes, each with 2 headers.
+
+**Ambiguous Events:**
+No events had ambiguous player attribution.
+
+**Review Priority:**
+Review Priority: moderate
+
+**Disclaimer:**
+This report is a research/review summary of video-derived analytics data and does not determine whether a concussion or brain injury occurred.

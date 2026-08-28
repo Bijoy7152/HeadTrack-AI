@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-08-18T17:40:19.544509+00:00",
+  "classes": {
+    "0": "player",
+    "1": "ball",
+    "2": "head"
+  },
+  "detector_model": "outputs/training/yolov8m/best.pt",
+  "num_videos_processed": 208,
+  "num_detections": 1114199,
+  "num_player_track_points": 974015,
+  "num_ball_track_points": 40133,
+  "num_head_player_associations": 108650,
+  "num_confirmed_header_events": 83,
+  "num_ambiguous_header_events": 1,
+  "num_players_summarized": 72,
+  "review_priority_disclaimer": "review_priority is a research-oriented exposure summary derived from image-plane detection/tracking signals. It is NOT a medical assessment and NOT a concussion diagnosis.",
+  "motion_proxy_disclaimer": "Any ball/head displacement figures in this dataset are image-plane pixel measurements, not calibrated physical units, unless camera calibration is explicitly noted elsewhere.",
+  "notes": "player track_id is only unique within a single video_id - there is no cross-video player re-identification in this pipeline."
+}

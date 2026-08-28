@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Upload Video — HeadTrack AI{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-7">
+    <div class="page-header text-center">
+      <h2>Upload Match Video</h2>
+      <p>Runs the real pipeline end-to-end — no fake results.</p>
+    </div>
+
+    <div class="card p-4 p-md-5">
+      <form id="uploadForm">
+        <label class="dropzone d-block" id="dropzone">
+          <div class="icon"><i class="bi bi-cloud-arrow-up"></i></div>
+          <div class="fw-semibold">Click to browse or drag &amp; drop an .mp4 file</div>
+          <div class="text-muted small mt-1">Player, ball &amp; head detection · ByteTrack · Kalman ball tracking ·
+            header contact detection · performer attribution · local-LLM reports</div>
+          <div class="filename" id="filename"></div>
+          <input class="d-none" type="file" name="video" id="fileInput" accept="video/mp4" required>
+        </label>
+        <button class="btn btn-primary w-100 mt-4 py-2" type="submit" id="submitBtn">
+          <i class="bi bi-cpu me-1"></i> Run Detection
+        </button>
+      </form>
+      <div id="err" class="text-danger mt-3 small"></div>
+    </div>
+
+    <div class="row g-3 mt-1 text-center">
+      <div class="col-4"><div class="card p-3"><i class="bi bi-person-bounding-box text-primary"></i>
+        <div class="small text-muted mt-1">Player/Ball/Head Detection</div></div></div>
+      <div class="col-4"><div class="card p-3"><i class="bi bi-diagram-3 text-primary"></i>
+        <div class="small text-muted mt-1">ByteTrack + Kalman</div></div></div>
+      <div class="col-4"><div class="card p-3"><i class="bi bi-robot text-primary"></i>
+        <div class="small text-muted mt-1">Local LLM Reports</div></div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const dropzone = document.getElementById('dropzone');
+const fileInput = document.getElementById('fileInput');
+const filenameEl = document.getElementById('filename');
+
+fileInput.addEventListener('change', () => {
+  if (fileInput.files.length) filenameEl.textContent = '📄 ' + fileInput.files[0].name;
+});
+['dragover', 'dragenter'].forEach(ev => dropzone.addEventListener(ev, e => { e.preventDefault(); dropzone.classList.add('dragover'); }));
+['dragleave', 'drop'].forEach(ev => dropzone.addEventListener(ev, e => { e.preventDefault(); dropzone.classList.remove('dragover'); }));
+dropzone.addEventListener('drop', e => {
+  if (e.dataTransfer.files.length) {
+    fileInput.files = e.dataTransfer.files;
+    filenameEl.textContent = '📄 ' + e.dataTransfer.files[0].name;
+  }
+});
+
+document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = new FormData(e.target);
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Uploading…';
+  try {
+    const resp = await fetch('/upload', { method: 'POST', body: form });
+    if (!resp.ok) { throw new Error((await resp.json()).detail || 'Upload failed'); }
+    const data = await resp.json();
+    window.location.href = data.redirect;
+  } catch (err) {
+    document.getElementById('err').textContent = err.message;
+    btn.disabled = false;
+    btn.innerHTML = '<i class="bi bi-cpu me-1"></i> Run Detection';
+  }
+});
+</script>
+{% endblock %}

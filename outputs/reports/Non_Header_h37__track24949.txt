@@ -1,0 +1,19 @@
+**Player Header Exposure Report**
+
+**Match/Player Identification:**
+Player ID: 24949, Match ID: Non_Header_h37
+
+**Header Counts:**
+Total Headers: 1, First Half: 1, Second Half: 0
+
+**Header Clustering:**
+No notable clustering of headers within the last 5, 10, or 15 minutes, as the shortest interval is null.
+
+**Ambiguous Events:**
+No events had ambiguous player attribution.
+
+**Review Priority:**
+Review Priority: low
+
+**Disclaimer:**
+This report is a research/review summary of video-derived analytics data and does not determine whether a concussion or brain injury occurred.

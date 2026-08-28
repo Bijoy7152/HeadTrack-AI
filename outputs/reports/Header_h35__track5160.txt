@@ -1,0 +1,15 @@
+**Player Header Exposure Report**
+
+**Match/Player Identification:**
+Player ID: 5160, Match ID: Header_h35
+
+**Header Counts:**
+Total Headers: 2, First Half: 2, Second Half: 0
+
+The player had 2 headers in a row, with the shortest interval between headers being 1.87 seconds. There is notable clustering of headers in the last 5, 10, and 15 minutes, with 2 headers in each interval.
+
+**Ambiguous Events:** None
+
+**Review Priority:** Moderate
+
+This report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred.

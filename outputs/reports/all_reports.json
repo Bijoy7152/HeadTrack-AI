@@ -1,0 +1,1298 @@
+[
+  {
+    "video_id": "Header_h94",
+    "track_id": 18084,
+    "llm_input": {
+      "player_id": 18084,
+      "match_id": "Header_h94",
+      "total_headers": 3,
+      "first_half": 3,
+      "second_half": 0,
+      "shortest_interval_sec": 0.87,
+      "headers_last_5_min": 3,
+      "headers_last_10_min": 3,
+      "headers_last_15_min": 3,
+      "ambiguous_events": 0,
+      "review_priority": "moderate"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 18084, Match ID: Header_h94\n\n**Header Counts:**\nTotal Headers: 3, First Half: 3, Second Half: 0\n\n**Header Clustering:**\nThe shortest interval between headers was 0.87 seconds, with headers clustered in the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: moderate\n\n**Disclaimer:**\nThis report is a research/review summary of player header exposure data, derived from video analytics. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h76",
+    "track_id": 14979,
+    "llm_input": {
+      "player_id": 14979,
+      "match_id": "Header_h76",
+      "total_headers": 2,
+      "first_half": 2,
+      "second_half": 0,
+      "shortest_interval_sec": 0.15,
+      "headers_last_5_min": 2,
+      "headers_last_10_min": 2,
+      "headers_last_15_min": 2,
+      "ambiguous_events": 0,
+      "review_priority": "moderate"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 14979, Match ID: Header_h76\n\n**Header Counts:**\nTotal Headers: 2, First Half: 2, Second Half: 0\n\n**Header Clustering:**\nThe shortest interval between headers was 0.15 seconds, with headers occurring in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: moderate\n\n**Disclaimer:**\nThis report is a research/review summary of player header exposure data, based solely on video-derived analytics. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h35",
+    "track_id": 5160,
+    "llm_input": {
+      "player_id": 5160,
+      "match_id": "Header_h35",
+      "total_headers": 2,
+      "first_half": 2,
+      "second_half": 0,
+      "shortest_interval_sec": 1.87,
+      "headers_last_5_min": 2,
+      "headers_last_10_min": 2,
+      "headers_last_15_min": 2,
+      "ambiguous_events": 0,
+      "review_priority": "moderate"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 5160, Match ID: Header_h35\n\n**Header Counts:**\nTotal Headers: 2, First Half: 2, Second Half: 0\n\nThe player had 2 headers in a row, with the shortest interval between headers being 1.87 seconds. There is notable clustering of headers in the last 5, 10, and 15 minutes, with 2 headers in each interval.\n\n**Ambiguous Events:** None\n\n**Review Priority:** Moderate\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h47",
+    "track_id": 27140,
+    "llm_input": {
+      "player_id": 27140,
+      "match_id": "Non_Header_h47",
+      "total_headers": 2,
+      "first_half": 2,
+      "second_half": 0,
+      "shortest_interval_sec": 0.68,
+      "headers_last_5_min": 2,
+      "headers_last_10_min": 2,
+      "headers_last_15_min": 2,
+      "ambiguous_events": 0,
+      "review_priority": "moderate"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 27140, Match ID: Non_Header_h47\n\n**Header Counts:**\nTotal Headers: 2, First Half: 2, Second Half: 0\n\n**Header Clustering:**\nThe shortest interval between headers was 0.68 seconds, with notable clustering in headers occurring within the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: moderate\n\n**Disclaimer:**\nThis report is a research/review summary of player header exposure data, derived from video analytics, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h102",
+    "track_id": 19719,
+    "llm_input": {
+      "player_id": 19719,
+      "match_id": "Non_Header_h102",
+      "total_headers": 2,
+      "first_half": 2,
+      "second_half": 0,
+      "shortest_interval_sec": 0.23,
+      "headers_last_5_min": 2,
+      "headers_last_10_min": 2,
+      "headers_last_15_min": 2,
+      "ambiguous_events": 0,
+      "review_priority": "moderate"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 19719, Match ID: Non_Header_h102\n\n**Header Counts:**\nTotal Headers: 2, First Half: 2, Second Half: 0\n\n**Header Clustering:**\nThe shortest interval between headers was 0.23 seconds, with headers clustered in the last 5, 10, and 15 minutes, each with 2 headers.\n\n**Ambiguous Events:** None\n\n**Review Priority:** moderate\n\n**Disclaimer:** This report is a research/review summary of player header exposure, based on video-derived analytics data, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h99",
+    "track_id": 18721,
+    "llm_input": {
+      "player_id": 18721,
+      "match_id": "Header_h99",
+      "total_headers": 2,
+      "first_half": 2,
+      "second_half": 0,
+      "shortest_interval_sec": 0.12,
+      "headers_last_5_min": 2,
+      "headers_last_10_min": 2,
+      "headers_last_15_min": 2,
+      "ambiguous_events": 0,
+      "review_priority": "moderate"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 18721, Match ID: Header_h99\n\n**Header Counts:**\nTotal Headers: 2, First Half: 2, Second Half: 0\n\n**Header Clustering:**\nThe shortest interval between headers was 0.12 seconds, with notable clustering in the last 5, 10, and 15 minutes, each with 2 headers.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: moderate\n\n**Disclaimer:**\nThis report is a research/review summary of video-derived analytics data and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h99",
+    "track_id": 18709,
+    "llm_input": {
+      "player_id": 18709,
+      "match_id": "Header_h99",
+      "total_headers": 2,
+      "first_half": 2,
+      "second_half": 0,
+      "shortest_interval_sec": 0.1,
+      "headers_last_5_min": 2,
+      "headers_last_10_min": 2,
+      "headers_last_15_min": 2,
+      "ambiguous_events": 0,
+      "review_priority": "moderate"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 18709, Match ID: Header_h99\n\n**Header Counts:**\nTotal Headers: 2, First Half: 2, Second Half: 0\n\n**Header Clustering:**\nThe shortest interval between headers was 0.1 seconds, with 2 headers occurring within the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: moderate\n\n**Disclaimer:** This report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h72",
+    "track_id": 14279,
+    "llm_input": {
+      "player_id": 14279,
+      "match_id": "Header_h72",
+      "total_headers": 2,
+      "first_half": 2,
+      "second_half": 0,
+      "shortest_interval_sec": 0.1,
+      "headers_last_5_min": 2,
+      "headers_last_10_min": 2,
+      "headers_last_15_min": 2,
+      "ambiguous_events": 0,
+      "review_priority": "moderate"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nMatch ID: Header_h72, Player ID: 14279\n\n**Header Counts:**\nTotal Headers: 2, First Half: 2, Second Half: 0\n\nThe player had a header every 0.1 seconds, with a notable clustering of headers in the last 5, 10, and 15 minutes, with 2 headers in each interval.\n\n**Ambiguous Events:** None\n\n**Review Priority:** moderate\n\nThis report is a research/review summary of player header exposure, based on video-derived analytics data. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h60",
+    "track_id": 11766,
+    "llm_input": {
+      "player_id": 11766,
+      "match_id": "Header_h60",
+      "total_headers": 2,
+      "first_half": 2,
+      "second_half": 0,
+      "shortest_interval_sec": 0.13,
+      "headers_last_5_min": 2,
+      "headers_last_10_min": 2,
+      "headers_last_15_min": 2,
+      "ambiguous_events": 0,
+      "review_priority": "moderate"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 11766, Match ID: Header_h60\n\n**Header Counts:**\nTotal Headers: 2, First Half: 2, Second Half: 0\n\n**Header Clustering:**\nThe shortest interval between headers was 0.13 seconds, with 2 headers occurring within the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: moderate\n\n**Disclaimer:**\nThis report is a research/review summary of video-derived analytics data and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h71",
+    "track_id": 34004,
+    "llm_input": {
+      "player_id": 34004,
+      "match_id": "Non_Header_h71",
+      "total_headers": 2,
+      "first_half": 2,
+      "second_half": 0,
+      "shortest_interval_sec": 0.1,
+      "headers_last_5_min": 2,
+      "headers_last_10_min": 2,
+      "headers_last_15_min": 2,
+      "ambiguous_events": 0,
+      "review_priority": "moderate"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 34004, Match ID: Non_Header_h71\n\n**Header Counts:**\nTotal Headers: 2, First Half: 2, Second Half: 0\n\n**Header Clustering:**\nThe shortest interval between headers was 0.1 seconds, with notable clustering in the last 5, 10, and 15 minutes, with 2 headers each.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: moderate\n\n**Disclaimer:**\nThis report is a research/review summary of player header exposure data, derived from video analysis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h37",
+    "track_id": 5476,
+    "llm_input": {
+      "player_id": 5476,
+      "match_id": "Header_h37",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 5476, Match ID: Header_h37\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h26",
+    "track_id": 3513,
+    "llm_input": {
+      "player_id": 3513,
+      "match_id": "Header_h26",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 3513, Match ID: Header_h26\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nNo notable clustering of headers within the last 5, 10, or 15 minutes.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: low\n\n**Disclaimer:**\nThis report is a research/review summary of player header exposure, based on video-derived analytics data. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h84",
+    "track_id": 16479,
+    "llm_input": {
+      "player_id": 16479,
+      "match_id": "Header_h84",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 16479, Match ID: Header_h84\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nNo notable clustering of headers within the last 5, 10, or 15 minutes, as the shortest interval is null.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: low\n\nThis report is a research/review summary of player header exposure, based on video-derived analytics data. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h86",
+    "track_id": 16969,
+    "llm_input": {
+      "player_id": 16969,
+      "match_id": "Header_h86",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 16969, Match ID: Header_h86\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of player exposure data, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h88",
+    "track_id": 17245,
+    "llm_input": {
+      "player_id": 17245,
+      "match_id": "Header_h88",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 17245, Match ID: Header_h88\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of the player's header exposure in the specified match, based on video-derived analytics data. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h88",
+    "track_id": 17263,
+    "llm_input": {
+      "player_id": 17263,
+      "match_id": "Header_h88",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 17263, Match ID: Header_h88\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nThe player had 1 header in the last 5 minutes, 10 minutes, and 15 minutes, with no notable clustering.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: low\n\n**Disclaimer:**\nThis report is a research/review summary of video-derived analytics data, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h88",
+    "track_id": 17391,
+    "llm_input": {
+      "player_id": 17391,
+      "match_id": "Header_h88",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 17391, Match ID: Header_h88\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None.\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h88",
+    "track_id": 17392,
+    "llm_input": {
+      "player_id": 17392,
+      "match_id": "Header_h88",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 17392, Match ID: Header_h88\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h91",
+    "track_id": 17727,
+    "llm_input": {
+      "player_id": 17727,
+      "match_id": "Header_h91",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 17727, Match ID: Header_h91\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h31",
+    "track_id": 4247,
+    "llm_input": {
+      "player_id": 4247,
+      "match_id": "Header_h31",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 4247, Match ID: Header_h31\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h94",
+    "track_id": 18139,
+    "llm_input": {
+      "player_id": 18139,
+      "match_id": "Header_h94",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 18139, Match ID: Header_h94\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nNo notable clustering of headers within the last 5, 10, or 15 minutes.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: low\n\n**Disclaimer:**\nThis report is a research/review summary of player header exposure data, derived from video analytics. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h97",
+    "track_id": 18474,
+    "llm_input": {
+      "player_id": 18474,
+      "match_id": "Header_h97",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 18474, Match ID: Header_h97\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nNo notable clustering observed, with the player having 1 header in the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:**\nNo ambiguous events detected.\n\n**Review Priority:**\nReview Priority: low\n\n**Disclaimer:**\nThis report is a research/review summary of player header exposure data, derived from video analytics. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h97",
+    "track_id": 18554,
+    "llm_input": {
+      "player_id": 18554,
+      "match_id": "Header_h97",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 18554, Match ID: Header_h97\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h99",
+    "track_id": 18705,
+    "llm_input": {
+      "player_id": 18705,
+      "match_id": "Header_h99",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 18705, Match ID: Header_h99\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h28",
+    "track_id": 3738,
+    "llm_input": {
+      "player_id": 3738,
+      "match_id": "Header_h28",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 3738, Match ID: Header_h28\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h102",
+    "track_id": 19598,
+    "llm_input": {
+      "player_id": 19598,
+      "match_id": "Non_Header_h102",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 19598, Match ID: Non_Header_h102\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h37",
+    "track_id": 5647,
+    "llm_input": {
+      "player_id": 5647,
+      "match_id": "Header_h37",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 5647, Match ID: Header_h37\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of player header exposure, derived from video analytics data, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h106",
+    "track_id": 1433,
+    "llm_input": {
+      "player_id": 1433,
+      "match_id": "Header_h106",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nMatch ID: Header_h106, Player ID: 1433\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h20",
+    "track_id": 21489,
+    "llm_input": {
+      "player_id": 21489,
+      "match_id": "Non_Header_h20",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 21489, Match ID: Non_Header_h20\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h3",
+    "track_id": 23181,
+    "llm_input": {
+      "player_id": 23181,
+      "match_id": "Non_Header_h3",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 23181, Match ID: Non_Header_h3\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nNo notable clustering of headers within 5, 10, or 15 minutes.\n\n**Ambiguous Events:** None.\n\n**Review Priority:** low\n\nThis report is a research/review summary of player exposure data, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h37",
+    "track_id": 24949,
+    "llm_input": {
+      "player_id": 24949,
+      "match_id": "Non_Header_h37",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 24949, Match ID: Non_Header_h37\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nNo notable clustering of headers within the last 5, 10, or 15 minutes, as the shortest interval is null.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: low\n\n**Disclaimer:**\nThis report is a research/review summary of video-derived analytics data and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h101",
+    "track_id": 583,
+    "llm_input": {
+      "player_id": 583,
+      "match_id": "Header_h101",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 583, Match ID: Header_h101\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of player exposure data, derived from video analytics. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h5",
+    "track_id": 27805,
+    "llm_input": {
+      "player_id": 27805,
+      "match_id": "Non_Header_h5",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 27805, Match ID: Non_Header_h5\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of player header exposure, based on video-derived analytics data. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h53",
+    "track_id": 29111,
+    "llm_input": {
+      "player_id": 29111,
+      "match_id": "Non_Header_h53",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 29111, Match ID: Non_Header_h53\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h57",
+    "track_id": 30164,
+    "llm_input": {
+      "player_id": 30164,
+      "match_id": "Non_Header_h57",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 30164, Match ID: Non_Header_h57\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Note:** There are no ambiguous events that require manual review.\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h59",
+    "track_id": 30500,
+    "llm_input": {
+      "player_id": 30500,
+      "match_id": "Non_Header_h59",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 30500, Match ID: Non_Header_h59\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**No ambiguous events were detected.**\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h6",
+    "track_id": 30909,
+    "llm_input": {
+      "player_id": 30909,
+      "match_id": "Non_Header_h6",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 30909, Match ID: Non_Header_h6\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nNo notable clustering of headers, with the player having 1 header in the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: low\n\n**Disclaimer:**\nThis report is a research/review summary of video-derived analytics data and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h7",
+    "track_id": 33601,
+    "llm_input": {
+      "player_id": 33601,
+      "match_id": "Non_Header_h7",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 33601, Match ID: Non_Header_h7\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes, with no notable clustering of headers.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of player header exposure, based on video-derived analytics data. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h70",
+    "track_id": 33871,
+    "llm_input": {
+      "player_id": 33871,
+      "match_id": "Non_Header_h70",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 33871, Match ID: Non_Header_h70\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\nThere are no ambiguous events that require manual review.\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Non_Header_h70",
+    "track_id": 33939,
+    "llm_input": {
+      "player_id": 33939,
+      "match_id": "Non_Header_h70",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 33939, Match ID: Non_Header_h70\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**No ambiguous events were detected.**\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h83",
+    "track_id": 16337,
+    "llm_input": {
+      "player_id": 16337,
+      "match_id": "Header_h83",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 1,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 16337, Match ID: Header_h83\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no notable clustering of headers in the last 5, 10, or 15 minutes. \n\nSome events had ambiguous player attribution and should be manually reviewed.\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h81",
+    "track_id": 16049,
+    "llm_input": {
+      "player_id": 16049,
+      "match_id": "Header_h81",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 16049, Match ID: Header_h81\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h81",
+    "track_id": 16038,
+    "llm_input": {
+      "player_id": 16038,
+      "match_id": "Header_h81",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification**\nPlayer ID: 16038, Match ID: Header_h81\n\n**Header Counts**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of player header exposure, based on video-derived analytics data. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h81",
+    "track_id": 15914,
+    "llm_input": {
+      "player_id": 15914,
+      "match_id": "Header_h81",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 15914, Match ID: Header_h81\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**No ambiguous events were detected.**\n\n**Review Priority:** low\n\nThis report is a research/review summary of player exposure data, derived from video analysis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h37",
+    "track_id": 5649,
+    "llm_input": {
+      "player_id": 5649,
+      "match_id": "Header_h37",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 5649, Match ID: Header_h37\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of player header exposure, based on video-derived analytics data. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h42",
+    "track_id": 6896,
+    "llm_input": {
+      "player_id": 6896,
+      "match_id": "Header_h42",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 6896, Match ID: Header_h42\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nNo notable clustering of headers within the last 5, 10, or 15 minutes.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: low\n\n**Disclaimer:**\nThis report is a research/review summary of video-derived analytics data and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h42",
+    "track_id": 6998,
+    "llm_input": {
+      "player_id": 6998,
+      "match_id": "Header_h42",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 6998, Match ID: Header_h42\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nNo notable clustering of headers within the last 5, 10, or 15 minutes.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: low\n\n**Disclaimer:**\nThis report is a research/review summary of player header exposure data, derived from video analytics. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h45",
+    "track_id": 7687,
+    "llm_input": {
+      "player_id": 7687,
+      "match_id": "Header_h45",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 7687, Match ID: Header_h45\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None.\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h47",
+    "track_id": 8404,
+    "llm_input": {
+      "player_id": 8404,
+      "match_id": "Header_h47",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 8404, Match ID: Header_h47\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nNo notable clustering of headers within the last 5, 10, or 15 minutes.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: low\n\n**Disclaimer:**\nThis report is a research/review summary of player header exposure data, derived from video analytics, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h47",
+    "track_id": 8502,
+    "llm_input": {
+      "player_id": 8502,
+      "match_id": "Header_h47",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 8502, Match ID: Header_h47\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\nThere are no ambiguous events that require manual review.\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h47",
+    "track_id": 8572,
+    "llm_input": {
+      "player_id": 8572,
+      "match_id": "Header_h47",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 8572, Match ID: Header_h47\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The shortest interval between headers is not available. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of the player's header exposure, derived from video-derived analytics data. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h49",
+    "track_id": 8896,
+    "llm_input": {
+      "player_id": 8896,
+      "match_id": "Header_h49",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 8896, Match ID: Header_h49\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h49",
+    "track_id": 8945,
+    "llm_input": {
+      "player_id": 8945,
+      "match_id": "Header_h49",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nMatch ID: Header_h49, Player ID: 8945\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h49",
+    "track_id": 8990,
+    "llm_input": {
+      "player_id": 8990,
+      "match_id": "Header_h49",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 8990, Match ID: Header_h49\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h49",
+    "track_id": 9092,
+    "llm_input": {
+      "player_id": 9092,
+      "match_id": "Header_h49",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 9092, Match ID: Header_h49\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h35",
+    "track_id": 5085,
+    "llm_input": {
+      "player_id": 5085,
+      "match_id": "Header_h35",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 5085, Match ID: Header_h35\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header, with no notable clustering of headers in the last 5, 10, or 15 minutes.\n\nThere are no ambiguous events that require manual review.\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h67",
+    "track_id": 13122,
+    "llm_input": {
+      "player_id": 13122,
+      "match_id": "Header_h67",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nMatch ID: Header_h67\nPlayer ID: 13122\n\n**Header Counts:**\nTotal Headers: 1\nFirst Half: 1\nSecond Half: 0\n\nThe player had a single header event in the match. The headers were clustered in the last 5, 10, and 15 minutes, with 1 header in each interval.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of player exposure data, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h67",
+    "track_id": 13258,
+    "llm_input": {
+      "player_id": 13258,
+      "match_id": "Header_h67",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 13258, Match ID: Header_h67\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h31",
+    "track_id": 4304,
+    "llm_input": {
+      "player_id": 4304,
+      "match_id": "Header_h31",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 4304, Match ID: Header_h31\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h72",
+    "track_id": 14305,
+    "llm_input": {
+      "player_id": 14305,
+      "match_id": "Header_h72",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 14305, Match ID: Header_h72\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\n**Header Clustering:**\nNo notable clustering of headers within the last 5, 10, or 15 minutes, as the shortest interval is null.\n\n**Ambiguous Events:**\nNo events had ambiguous player attribution.\n\n**Review Priority:**\nReview Priority: low\n\n**Disclaimer:**\nThis report is a research/review summary of video-derived analytics data, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h73",
+    "track_id": 14418,
+    "llm_input": {
+      "player_id": 14418,
+      "match_id": "Header_h73",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 14418, Match ID: Header_h73\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**No ambiguous events were detected.**\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h73",
+    "track_id": 14419,
+    "llm_input": {
+      "player_id": 14419,
+      "match_id": "Header_h73",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 14419, Match ID: Header_h73\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of the player's header exposure, based on video-derived analytics data. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h73",
+    "track_id": 14486,
+    "llm_input": {
+      "player_id": 14486,
+      "match_id": "Header_h73",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 14486, Match ID: Header_h73\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header in the match, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h74",
+    "track_id": 14576,
+    "llm_input": {
+      "player_id": 14576,
+      "match_id": "Header_h74",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 14576, Match ID: Header_h74\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h74",
+    "track_id": 14646,
+    "llm_input": {
+      "player_id": 14646,
+      "match_id": "Header_h74",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 14646, Match ID: Header_h74\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h74",
+    "track_id": 14661,
+    "llm_input": {
+      "player_id": 14661,
+      "match_id": "Header_h74",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 14661, Match ID: Header_h74\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h74",
+    "track_id": 14669,
+    "llm_input": {
+      "player_id": 14669,
+      "match_id": "Header_h74",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 14669, Match ID: Header_h74\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h76",
+    "track_id": 14962,
+    "llm_input": {
+      "player_id": 14962,
+      "match_id": "Header_h76",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 14962, Match ID: Header_h76\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h1",
+    "track_id": 75,
+    "llm_input": {
+      "player_id": 75,
+      "match_id": "Header_h1",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 75, Match ID: Header_h1\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h77",
+    "track_id": 15149,
+    "llm_input": {
+      "player_id": 15149,
+      "match_id": "Header_h77",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 15149, Match ID: Header_h77\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**No ambiguous events were detected.**\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h80",
+    "track_id": 15838,
+    "llm_input": {
+      "player_id": 15838,
+      "match_id": "Header_h80",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 15838, Match ID: Header_h80\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header event, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary of player header exposure, based on video-derived analytics data. It does not determine whether a concussion or brain injury occurred."
+  },
+  {
+    "video_id": "Header_h1",
+    "track_id": 8,
+    "llm_input": {
+      "player_id": 8,
+      "match_id": "Header_h1",
+      "total_headers": 1,
+      "first_half": 1,
+      "second_half": 0,
+      "shortest_interval_sec": null,
+      "headers_last_5_min": 1,
+      "headers_last_10_min": 1,
+      "headers_last_15_min": 1,
+      "ambiguous_events": 0,
+      "review_priority": "low"
+    },
+    "report": "**Player Header Exposure Report**\n\n**Match/Player Identification:**\nPlayer ID: 8, Match ID: Header_h1\n\n**Header Counts:**\nTotal Headers: 1, First Half: 1, Second Half: 0\n\nThe player had a single header, with no headers in the second half. The player had a header in each of the last 5, 10, and 15 minutes.\n\n**Ambiguous Events:** None\n\n**Review Priority:** low\n\nThis report is a research/review summary, not a medical diagnosis, and does not determine whether a concussion or brain injury occurred."
+  }
+]

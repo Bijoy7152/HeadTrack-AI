@@ -1,0 +1,73 @@
+video_id,track_id,total_headers,first_half_headers,second_half_headers,mean_interval_sec,min_interval_sec,max_interval_sec,median_interval_sec,max_rolling_5min_count,max_rolling_10min_count,max_rolling_15min_count,ambiguous_events,ambiguous_ratio,avg_header_confidence,high_attribution_ratio,avg_ball_displacement_px,avg_head_displacement_px,timeline_mmss,review_priority
+Header_h94,18084,3,3,0,1.02,0.87,1.18,1.02,3,3,3,0,0.0,0.8327,1.0,4.75,2.9,"00:01, 00:02, 00:03",Moderate Review Priority
+Header_h76,14979,2,2,0,0.15,0.15,0.15,0.15,2,2,2,0,0.0,0.6953,1.0,87.54,10.85,"00:03, 00:04",Moderate Review Priority
+Header_h35,5160,2,2,0,1.87,1.87,1.87,1.87,2,2,2,0,0.0,0.702,1.0,7.77,3.51,"00:03, 00:04",Moderate Review Priority
+Non_Header_h47,27140,2,2,0,0.68,0.68,0.68,0.68,2,2,2,0,0.0,0.7379,1.0,8.01,8.51,"00:07, 00:07",Moderate Review Priority
+Non_Header_h102,19719,2,2,0,0.23,0.23,0.23,0.23,2,2,2,0,0.0,0.7295,1.0,10.89,22.16,"00:09, 00:09",Moderate Review Priority
+Header_h99,18721,2,2,0,0.12,0.12,0.12,0.12,2,2,2,0,0.0,0.593,1.0,17.55,3.27,"00:04, 00:04",Moderate Review Priority
+Header_h99,18709,2,2,0,0.1,0.1,0.1,0.1,2,2,2,0,0.0,0.5973,1.0,15.93,8.01,"00:03, 00:03",Moderate Review Priority
+Header_h72,14279,2,2,0,0.1,0.1,0.1,0.1,2,2,2,0,0.0,0.7078,1.0,6.58,2.24,"00:02, 00:02",Moderate Review Priority
+Header_h60,11766,2,2,0,0.13,0.13,0.13,0.13,2,2,2,0,0.0,0.6524,1.0,4.75,4.43,"00:01, 00:01",Moderate Review Priority
+Non_Header_h71,34004,2,2,0,0.1,0.1,0.1,0.1,2,2,2,0,0.0,0.6726,1.0,10.98,25.31,"00:01, 00:01",Moderate Review Priority
+Header_h37,5476,1,1,0,,,,,1,1,1,0,0.0,0.7303,1.0,16.95,5.99,00:02,Low Review Priority
+Header_h26,3513,1,1,0,,,,,1,1,1,0,0.0,0.5879,1.0,1.43,2.42,00:05,Low Review Priority
+Header_h84,16479,1,1,0,,,,,1,1,1,0,0.0,0.7273,1.0,39.93,5.89,00:02,Low Review Priority
+Header_h86,16969,1,1,0,,,,,1,1,1,0,0.0,0.7965,1.0,4.85,0.97,00:03,Low Review Priority
+Header_h88,17245,1,1,0,,,,,1,1,1,0,0.0,0.591,1.0,76.8,,00:01,Low Review Priority
+Header_h88,17263,1,1,0,,,,,1,1,1,0,0.0,0.7535,1.0,30.15,2.47,00:01,Low Review Priority
+Header_h88,17391,1,1,0,,,,,1,1,1,0,0.0,0.6357,1.0,11.73,6.34,00:05,Low Review Priority
+Header_h88,17392,1,1,0,,,,,1,1,1,0,0.0,0.6395,1.0,11.73,,00:05,Low Review Priority
+Header_h91,17727,1,1,0,,,,,1,1,1,0,0.0,0.8855,1.0,6.28,3.67,00:02,Low Review Priority
+Header_h31,4247,1,1,0,,,,,1,1,1,0,0.0,0.6067,1.0,0.0,1.68,00:00,Low Review Priority
+Header_h94,18139,1,1,0,,,,,1,1,1,0,0.0,0.6013,1.0,6.0,8.28,00:04,Low Review Priority
+Header_h97,18474,1,1,0,,,,,1,1,1,0,0.0,0.6386,1.0,13.44,8.08,00:04,Low Review Priority
+Header_h97,18554,1,1,0,,,,,1,1,1,0,0.0,0.7387,1.0,6.12,14.5,00:04,Low Review Priority
+Header_h99,18705,1,1,0,,,,,1,1,1,0,0.0,0.7794,1.0,8.49,2.48,00:03,Low Review Priority
+Header_h28,3738,1,1,0,,,,,1,1,1,0,0.0,0.9435,1.0,10.87,5.44,00:05,Low Review Priority
+Non_Header_h102,19598,1,1,0,,,,,1,1,1,0,0.0,0.7656,1.0,1.23,0.25,00:08,Low Review Priority
+Header_h37,5647,1,1,0,,,,,1,1,1,0,0.0,0.5705,1.0,3.21,2.06,00:07,Low Review Priority
+Header_h106,1433,1,1,0,,,,,1,1,1,0,0.0,0.6263,1.0,0.0,1.64,00:03,Low Review Priority
+Non_Header_h20,21489,1,1,0,,,,,1,1,1,0,0.0,0.5799,1.0,1.02,,00:04,Low Review Priority
+Non_Header_h3,23181,1,1,0,,,,,1,1,1,0,0.0,0.7839,1.0,7.4,0.53,00:08,Low Review Priority
+Non_Header_h37,24949,1,1,0,,,,,1,1,1,0,0.0,0.5885,1.0,0.01,66.94,00:09,Low Review Priority
+Header_h101,583,1,1,0,,,,,1,1,1,0,0.0,0.8378,1.0,25.03,5.41,00:02,Low Review Priority
+Non_Header_h5,27805,1,1,0,,,,,1,1,1,0,0.0,0.6934,1.0,3.34,1.44,00:01,Low Review Priority
+Non_Header_h53,29111,1,1,0,,,,,1,1,1,0,0.0,0.6031,1.0,1.03,15.96,00:07,Low Review Priority
+Non_Header_h57,30164,1,1,0,,,,,1,1,1,0,0.0,0.7665,1.0,11.81,3.94,00:00,Low Review Priority
+Non_Header_h59,30500,1,1,0,,,,,1,1,1,0,0.0,0.5681,1.0,1.82,5.82,00:03,Low Review Priority
+Non_Header_h6,30909,1,1,0,,,,,1,1,1,0,0.0,0.774,1.0,1.54,0.15,00:02,Low Review Priority
+Non_Header_h7,33601,1,1,0,,,,,1,1,1,0,0.0,0.7976,1.0,7.91,1.6,00:08,Low Review Priority
+Non_Header_h70,33871,1,1,0,,,,,1,1,1,0,0.0,0.6695,1.0,17.31,1.59,00:08,Low Review Priority
+Non_Header_h70,33939,1,1,0,,,,,1,1,1,0,0.0,0.6119,1.0,10.15,14.98,00:09,Low Review Priority
+Header_h83,16337,1,1,0,,,,,1,1,1,1,1.0,0.6499,0.0,8.12,15.17,00:01,Low Review Priority
+Header_h81,16049,1,1,0,,,,,1,1,1,0,0.0,0.7045,1.0,3.86,2.94,00:03,Low Review Priority
+Header_h81,16038,1,1,0,,,,,1,1,1,0,0.0,0.7138,1.0,4.57,5.52,00:04,Low Review Priority
+Header_h81,15914,1,1,0,,,,,1,1,1,0,0.0,0.5684,1.0,10.28,13.21,00:00,Low Review Priority
+Header_h37,5649,1,1,0,,,,,1,1,1,0,0.0,0.7005,1.0,13.0,5.39,00:06,Low Review Priority
+Header_h42,6896,1,1,0,,,,,1,1,1,0,0.0,0.7878,1.0,0.0,2.54,00:05,Low Review Priority
+Header_h42,6998,1,1,0,,,,,1,1,1,0,0.0,0.641,1.0,5.17,0.03,00:04,Low Review Priority
+Header_h45,7687,1,1,0,,,,,1,1,1,0,0.0,0.6954,1.0,13.79,0.04,00:04,Low Review Priority
+Header_h47,8404,1,1,0,,,,,1,1,1,0,0.0,0.8249,1.0,919.95,4.4,00:03,Low Review Priority
+Header_h47,8502,1,1,0,,,,,1,1,1,0,0.0,0.6707,1.0,8.76,9.29,00:04,Low Review Priority
+Header_h47,8572,1,1,0,,,,,1,1,1,0,0.0,0.8329,1.0,4.02,6.7,00:05,Low Review Priority
+Header_h49,8896,1,1,0,,,,,1,1,1,0,0.0,0.7729,1.0,14.7,6.13,00:02,Low Review Priority
+Header_h49,8945,1,1,0,,,,,1,1,1,0,0.0,0.7724,1.0,5.62,17.92,00:04,Low Review Priority
+Header_h49,8990,1,1,0,,,,,1,1,1,0,0.0,0.5545,1.0,3.87,16.72,00:06,Low Review Priority
+Header_h49,9092,1,1,0,,,,,1,1,1,0,0.0,0.6554,1.0,17.32,6.07,00:04,Low Review Priority
+Header_h35,5085,1,1,0,,,,,1,1,1,0,0.0,0.6708,1.0,10.12,7.04,00:01,Low Review Priority
+Header_h67,13122,1,1,0,,,,,1,1,1,0,0.0,0.6685,1.0,55.87,56.27,00:00,Low Review Priority
+Header_h67,13258,1,1,0,,,,,1,1,1,0,0.0,0.9442,1.0,8.96,9.81,00:02,Low Review Priority
+Header_h31,4304,1,1,0,,,,,1,1,1,0,0.0,0.5756,1.0,14.12,3.26,00:03,Low Review Priority
+Header_h72,14305,1,1,0,,,,,1,1,1,0,0.0,0.7737,1.0,6.42,32.31,00:03,Low Review Priority
+Header_h73,14418,1,1,0,,,,,1,1,1,0,0.0,0.735,1.0,17.83,51.06,00:00,Low Review Priority
+Header_h73,14419,1,1,0,,,,,1,1,1,0,0.0,0.6867,1.0,302.22,4.83,00:00,Low Review Priority
+Header_h73,14486,1,1,0,,,,,1,1,1,0,0.0,0.6819,1.0,21.65,4.74,00:02,Low Review Priority
+Header_h74,14576,1,1,0,,,,,1,1,1,0,0.0,0.7713,1.0,25.96,13.29,00:01,Low Review Priority
+Header_h74,14646,1,1,0,,,,,1,1,1,0,0.0,0.7651,1.0,22.01,5.19,00:02,Low Review Priority
+Header_h74,14661,1,1,0,,,,,1,1,1,0,0.0,0.5814,1.0,,5.61,00:02,Low Review Priority
+Header_h74,14669,1,1,0,,,,,1,1,1,0,0.0,0.6103,1.0,23.61,2.39,00:02,Low Review Priority
+Header_h76,14962,1,1,0,,,,,1,1,1,0,0.0,0.6785,1.0,7.24,3.11,00:03,Low Review Priority
+Header_h1,75,1,1,0,,,,,1,1,1,0,0.0,0.7664,1.0,9.47,3.95,00:03,Low Review Priority
+Header_h77,15149,1,1,0,,,,,1,1,1,0,0.0,0.6384,1.0,4.76,,00:01,Low Review Priority
+Header_h80,15838,1,1,0,,,,,1,1,1,0,0.0,0.7824,1.0,15.09,7.69,00:04,Low Review Priority
+Header_h1,8,1,1,0,,,,,1,1,1,0,0.0,0.7717,1.0,9.2,2.93,00:04,Low Review Priority

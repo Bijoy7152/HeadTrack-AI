@@ -1,0 +1,3 @@
+model,precision,recall,f1,mAP50,mAP50-95,FPS,params_millions
+yolov8m,0.8158,0.7476,0.7802,0.804,0.6244,36.24,25.84
+yolov8s,0.7901,0.7092,0.7475,0.7637,0.5763,71.92,11.13

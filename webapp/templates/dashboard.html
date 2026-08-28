@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — HeadTrack AI{% endblock %}
+{% block content %}
+
+<div class="page-banner d-flex justify-content-between align-items-center flex-wrap gap-3">
+  <div>
+    <h1>Automated Soccer Header Exposure Tracking</h1>
+    <p>LLM-based player reporting, driven by a real trained YOLOv8m player/ball/head detector,
+       ByteTrack player tracking, Kalman-filtered ball trajectories, and adaptive header-contact
+       detection with performer attribution.</p>
+  </div>
+  <a href="/upload" class="btn btn-primary btn-lg flex-shrink-0"><i class="bi bi-upload me-1"></i> Upload Match Video</a>
+</div>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h5 class="mb-0">Processed Videos</h5>
+</div>
+
+{% if not jobs %}
+<div class="card empty-state">
+  <div class="icon"><i class="bi bi-film"></i></div>
+  <h5>No videos processed yet</h5>
+  <p>Upload a match clip to run the full detection &rarr; tracking &rarr; header-event &rarr; LLM report pipeline.</p>
+  <div><a href="/upload" class="btn btn-primary">Upload your first video</a></div>
+</div>
+{% else %}
+<div class="card p-0">
+<div class="table-responsive">
+<table class="table table-hover align-middle mb-0">
+  <thead><tr>
+    <th class="ps-4">Video</th><th>Status</th><th>Players</th><th>Headers</th><th>Ambiguous</th>
+    <th>Processing Time</th><th>Uploaded</th><th class="text-end pe-4">Action</th>
+  </tr></thead>
+  <tbody>
+  {% for j in jobs %}
+    <tr>
+      <td class="ps-4 fw-semibold">{{ j.filename }}</td>
+      <td>
+        {% if j.status == 'done' %}<span class="status-pill status-done"><span class="status-dot"></span>Done</span>
+        {% elif j.status == 'error' %}<span class="status-pill status-error"><span class="status-dot"></span>Error</span>
+        {% else %}<span class="status-pill status-processing"><span class="status-dot"></span>{{ j.status|capitalize }}</span>{% endif %}
+      </td>
+      <td>{{ j.stats.total_players_tracked if j.stats else '—' }}</td>
+      <td>{{ j.stats.total_headers_detected if j.stats else '—' }}</td>
+      <td>{{ j.stats.ambiguous_events if j.stats else '—' }}</td>
+      <td>{{ '%.1f'|format(j.processing_seconds) + 's' if j.processing_seconds else '—' }}</td>
+      <td><small class="text-muted">{{ j.created_at[:19].replace('T', ' ') }}</small></td>
+      <td class="text-end pe-4">
+        {% if j.status == 'done' %}
+          <a href="/jobs/{{ j.id }}/players" class="btn btn-sm btn-outline-light">View Results <i class="bi bi-arrow-right"></i></a>
+        {% elif j.status == 'error' %}
+          <span class="text-danger small">{{ j.error[:60] }}…</span>
+        {% else %}
+          <a href="/jobs/{{ j.id }}/processing" class="btn btn-sm btn-outline-warning">View Progress</a>
+        {% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Ambiguous Events — HeadTrack AI{% endblock %}
+{% block content %}
+{% set active = 'ambiguous' %}
+{% include "_job_nav.html" %}
+<p class="text-muted">Events where the margin between the closest and second-closest player candidate was too
+  small to auto-attribute with confidence. Review and record a human decision — this does not modify the
+  pipeline's own output files, it's logged separately.</p>
+
+{% if not events %}
+<div class="card p-4 text-center text-muted">No ambiguous events in this video.</div>
+{% else %}
+{% for e in events %}
+<div class="card p-3 mb-3">
+  <h6>Event {{ e.event_id }} <small class="text-muted">t = {{ '%.2f'|format(e.timestamp_sec) }}s</small></h6>
+  <table class="table table-sm w-auto">
+    <tr><td>Candidate 1</td><td>Track {{ e.track_id }}</td><td>distance {{ e.ball_head_distance_px }} px</td></tr>
+  </table>
+  <p><span class="badge bg-warning text-dark">Ambiguous</span>
+     {% if e.review %}<span class="badge bg-info ms-2">Reviewed: {{ e.review.decision }}</span>{% endif %}</p>
+  <div class="btn-group">
+    <button class="btn btn-sm btn-outline-success" onclick="decide('{{ e.event_id }}', 'accept_primary', '{{ e.track_id }}')">Accept Track {{ e.track_id }}</button>
+    <button class="btn btn-sm btn-outline-danger" onclick="decide('{{ e.event_id }}', 'reject', null)">Reject Event</button>
+  </div>
+</div>
+{% endfor %}
+{% endif %}
+
+<script>
+async function decide(eventId, decision, trackId) {
+  const form = new URLSearchParams({ decision, chosen_track_id: trackId || '' });
+  await fetch(`/jobs/{{ job.id }}/ambiguous/${eventId}/decide`, { method: 'POST', body: form });
+  window.location.reload();
+}
+</script>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Player Tracking — HeadTrack AI{% endblock %}
+{% block content %}
+{% set active = 'tracking' %}
+{% include "_job_nav.html" %}
+<div class="row g-3 mb-4">
+  <div class="col"><div class="card metric-card"><div class="value">{{ tracks|length }}</div><div class="label">Unique Tracks (ByteTrack)</div></div></div>
+  <div class="col"><div class="card metric-card"><div class="value">{{ total_points }}</div><div class="label">Total Track Points</div></div></div>
+</div>
+<div class="table-responsive">
+<table class="table table-hover align-middle">
+  <thead><tr><th>Track ID</th><th>Frames Tracked</th><th>First Frame</th><th>Last Frame</th><th>Avg Detection Confidence</th></tr></thead>
+  <tbody>
+  {% for t in tracks %}
+    <tr><td>{{ t.track_id }}</td><td>{{ t.frames }}</td><td>{{ t.first_frame }}</td><td>{{ t.last_frame }}</td><td>{{ t.avg_confidence }}</td></tr>
+  {% else %}
+    <tr><td colspan="5" class="text-center text-muted">No player tracks found.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

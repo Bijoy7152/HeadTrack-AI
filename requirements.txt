@@ -1,0 +1,5 @@
+# Installs everything needed for both the CV/dataset pipeline (scripts/)
+# and the dashboard (webapp/). Kept as includes so each part can still be
+# installed standalone from its own subfolder if needed.
+-r scripts/requirements.txt
+-r webapp/requirements.txt

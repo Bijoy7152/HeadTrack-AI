@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Ball Tracking — HeadTrack AI{% endblock %}
+{% block content %}
+{% set active = 'ball' %}
+{% include "_job_nav.html" %}
+<div class="row g-3 mb-4">
+  <div class="col"><div class="card metric-card"><div class="value">{{ detected }}</div><div class="label">Detected Positions</div></div></div>
+  <div class="col"><div class="card metric-card"><div class="value">{{ predicted }}</div><div class="label">Kalman-Predicted Positions</div></div></div>
+</div>
+<div class="card p-3 mb-4">
+  <canvas id="ballChart" height="90"></canvas>
+</div>
+<script>
+const traj = {{ trajectory|tojson }};
+new Chart(document.getElementById('ballChart'), {
+  type: 'scatter',
+  data: {
+    datasets: [
+      { label: 'Detected', data: traj.filter(p => p.position_source === 'detected').map(p => ({x: p.frame_number, y: p.ball_x})), backgroundColor: '#7aa2ff' },
+      { label: 'Predicted (Kalman)', data: traj.filter(p => p.position_source === 'predicted').map(p => ({x: p.frame_number, y: p.ball_x})), backgroundColor: '#e0a458' },
+    ]
+  },
+  options: {
+    scales: {
+      x: { title: { display: true, text: 'Frame', color: '#9aa4bf' }, ticks: { color: '#9aa4bf' } },
+      y: { title: { display: true, text: 'Ball X (px)', color: '#9aa4bf' }, ticks: { color: '#9aa4bf' } },
+    },
+    plugins: { legend: { labels: { color: '#e6e9f0' } } }
+  }
+});
+</script>
+{% endblock %}
