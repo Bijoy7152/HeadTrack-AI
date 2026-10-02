@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="HeadTrack AI — রিভিউ প্রায়োরিটি কীভাবে হিসাব হয়: স্কোরিং নিয়ম, কোড, উদাহরণ ও রিসোর্স।">
+<style>
+  :root { color-scheme: light dark; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+</style>
+<title>HeadTrack রিভিউ প্রায়োরিটি</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&family=Hind+Siliguri:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root {
+  --ground:#F6F8F5; --surface:#FFFFFF; --surface-alt:#EDF1EC; --code-bg:#EDF1EC;
+  --ink:#141C18; --ink-2:#47544D; --ink-3:#75837B;
+  --rule:#D8E0D9; --rule-strong:#B9C6BC;
+  --accent:#1E6E4A; --accent-soft:#E2EFE7; --accent-line:#9CC7B0;
+  --low:#5F7069;  --low-bg:#E7ECE8;
+  --mod:#96620F;  --mod-bg:#F8EBD4;
+  --high:#96301E; --high-bg:#F7E3DE;
+  --shadow:0 1px 2px rgba(20,28,24,.05), 0 8px 24px -12px rgba(20,28,24,.14);
+  --bn: "Hind Siliguri", "Noto Sans Bengali", system-ui, sans-serif;
+  --bn-display: "Tiro Bangla", "Noto Serif Bengali", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground:#0E1411; --surface:#161E1A; --surface-alt:#1B2520; --code-bg:#19231E;
+    --ink:#E5EBE6; --ink-2:#A7B4AD; --ink-3:#7C8A82;
+    --rule:#293430; --rule-strong:#3A4842;
+    --accent:#56B98A; --accent-soft:#173026; --accent-line:#2F6B50;
+    --low:#9CAAA3;  --low-bg:#212B26;
+    --mod:#DFA94E;  --mod-bg:#31260F;
+    --high:#E07D68; --high-bg:#33201B;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"] {
+  --ground:#0E1411; --surface:#161E1A; --surface-alt:#1B2520; --code-bg:#19231E;
+  --ink:#E5EBE6; --ink-2:#A7B4AD; --ink-3:#7C8A82;
+  --rule:#293430; --rule-strong:#3A4842;
+  --accent:#56B98A; --accent-soft:#173026; --accent-line:#2F6B50;
+  --low:#9CAAA3;  --low-bg:#212B26;
+  --mod:#DFA94E;  --mod-bg:#31260F;
+  --high:#E07D68; --high-bg:#33201B;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--ground); color: var(--ink);
+  font-family: var(--bn); font-size: 17px; line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 940px; margin: 0 auto; padding: 0 24px 88px; }
+.col  { max-width: 660px; }
+
+/* masthead */
+header.mast { padding: 48px 0 26px; border-bottom: 2px solid var(--ink); margin-bottom: 42px; }
+.eyebrow {
+  font-family: var(--mono); font-size: .72rem; font-weight: 500;
+  letter-spacing: .13em; text-transform: uppercase;
+  color: var(--accent); margin: 0 0 18px; line-height: 1.4;
+}
+h1 {
+  font-family: var(--bn-display); font-weight: 400;
+  font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.35;
+  margin: 0 0 16px; text-wrap: balance; max-width: 18ch;
+}
+.standfirst {
+  font-family: var(--bn-display); font-size: 1.12rem; line-height: 1.8;
+  color: var(--ink-2); max-width: 48ch; margin: 0 0 26px;
+}
+.mast-meta {
+  display: flex; flex-wrap: wrap; gap: 6px 26px;
+  font-size: .8rem; color: var(--ink-3); line-height: 1.7;
+  border-top: 1px solid var(--rule); padding-top: 14px;
+}
+.mast-meta b { color: var(--ink-2); font-weight: 600; }
+
+/* sections */
+section { margin: 0 0 58px; }
+.sec-head { display: flex; align-items: baseline; gap: 14px; margin: 0 0 4px; }
+.sec-num {
+  font-family: var(--mono); font-size: .78rem; font-weight: 600;
+  color: var(--accent); flex: none; padding-top: .1em;
+}
+h2 {
+  font-family: var(--bn-display); font-weight: 400;
+  font-size: 1.62rem; line-height: 1.45; margin: 0; text-wrap: balance;
+}
+.src-tag {
+  display: inline-block; font-family: var(--mono);
+  font-size: .66rem; letter-spacing: .06em;
+  color: var(--ink-3); border: 1px solid var(--rule-strong);
+  border-radius: 2px; padding: 3px 8px; margin: 12px 0 0 34px; line-height: 1.4;
+}
+h3 {
+  font-family: var(--bn); font-size: 1rem; font-weight: 600; line-height: 1.6;
+  margin: 32px 0 10px; color: var(--ink); max-width: 44ch;
+}
+p { margin: 0 0 16px; }
+.col p, .col ul { max-width: 50ch; }
+a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+code, .mono { font-family: var(--mono); font-size: .85em; line-height: 1.5; }
+code { background: var(--code-bg); padding: .12em .4em; border-radius: 3px; color: var(--ink); }
+strong { font-weight: 600; }
+em { font-style: normal; color: var(--ink-2); }
+ul { padding-left: 1.2em; margin: 0 0 16px; }
+li { margin-bottom: 8px; }
+
+/* table */
+.tbl-scroll { overflow-x: auto; margin: 22px 0; border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: .88rem; min-width: 560px; }
+th {
+  text-align: left; font-family: var(--bn); font-weight: 600; font-size: .79rem;
+  color: var(--ink-2); padding: 12px 15px; border-bottom: 1px solid var(--rule-strong);
+  white-space: nowrap; background: var(--surface-alt); line-height: 1.5;
+}
+td { padding: 12px 15px; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.7; }
+tr:last-child td { border-bottom: none; }
+td.cond { font-family: var(--mono); font-size: .78rem; line-height: 1.6; }
+td.pts { font-family: var(--mono); font-weight: 600; color: var(--accent); text-align: center; white-space: nowrap; }
+tr.sub td:first-child { color: var(--ink-3); padding-left: 26px; }
+tfoot td {
+  background: var(--surface-alt); font-weight: 600; font-size: .83rem;
+  border-top: 1px solid var(--rule-strong);
+}
+
+/* cutoff ladder */
+.ladder { display: flex; flex-direction: column; gap: 1px; margin: 22px 0 8px; max-width: 520px;
+  border: 1px solid var(--rule); border-radius: 3px; overflow: hidden; }
+.rung { display: grid; grid-template-columns: 118px 1fr; align-items: center; gap: 16px;
+  padding: 13px 16px; background: var(--surface); }
+.rung-score { font-family: var(--mono); font-size: .82rem; font-weight: 600; color: var(--ink-2); white-space: nowrap; }
+.tier { font-family: var(--mono); font-size: .72rem; font-weight: 600; letter-spacing: .05em;
+  padding: 4px 10px; border-radius: 2px; white-space: nowrap; justify-self: start; }
+.t-low  { background: var(--low-bg);  color: var(--low); }
+.t-mod  { background: var(--mod-bg);  color: var(--mod); }
+.t-high { background: var(--high-bg); color: var(--high); }
+
+/* examples */
+.examples { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin: 22px 0; }
+.ex { background: var(--surface); border: 1px solid var(--rule); border-radius: 3px;
+  padding: 18px 20px 20px; display: flex; flex-direction: column; }
+.ex-id { font-family: var(--mono); font-size: .75rem; color: var(--ink-2);
+  border-bottom: 1px solid var(--rule); padding-bottom: 11px; margin-bottom: 13px; line-height: 1.5; }
+.ex-rows { font-family: var(--mono); font-size: .74rem; line-height: 2; flex: 1; }
+.ex-rows div { display: flex; justify-content: space-between; gap: 12px; }
+.ex-rows span:first-child { color: var(--ink-2); }
+.ex-rows span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ex-pt { color: var(--accent); font-weight: 600; }
+.ex-zero { color: var(--ink-3); }
+.ex-total { display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  border-top: 1px solid var(--rule-strong); margin-top: 13px; padding-top: 13px;
+  font-family: var(--mono); font-size: .8rem; font-weight: 600; }
+.caption { font-size: .82rem; color: var(--ink-3); margin: -6px 0 0; max-width: 54ch; line-height: 1.7; }
+
+pre {
+  background: var(--code-bg); border: 1px solid var(--rule); border-radius: 3px;
+  padding: 16px 18px; overflow-x: auto; margin: 18px 0;
+  font-family: var(--mono); font-size: .77rem; line-height: 1.75; color: var(--ink);
+}
+pre .cm { color: var(--ink-3); }
+
+/* resources */
+.res { counter-reset: r; list-style: none; padding: 0; margin: 22px 0 0; }
+.res li { counter-increment: r; position: relative; padding-left: 40px;
+  margin-bottom: 22px; max-width: 72ch; }
+.res li::before {
+  content: "[" counter(r) "]"; position: absolute; left: 0; top: .3em;
+  font-family: var(--mono); font-size: .72rem; color: var(--accent); font-weight: 500;
+}
+.res-cite { font-family: "IBM Plex Sans", -apple-system, sans-serif; font-size: .88rem; line-height: 1.62; }
+.res-cite i { color: var(--ink-2); font-style: italic; }
+.res-doi { font-family: var(--mono); font-size: .73rem; margin-top: 5px; word-break: break-all; line-height: 1.6; }
+.res-note { font-size: .86rem; color: var(--ink-2); margin-top: 7px;
+  border-left: 2px solid var(--rule-strong); padding-left: 12px; line-height: 1.75; max-width: 52ch; }
+
+details { border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); margin: 26px 0 0; }
+summary { cursor: pointer; padding: 14px 18px; font-size: .92rem; font-weight: 600; list-style-position: inside; }
+details[open] summary { border-bottom: 1px solid var(--rule); }
+details > div { padding: 2px 18px 6px; }
+
+footer { border-top: 1px solid var(--rule); margin-top: 40px; padding-top: 22px;
+  font-size: .84rem; color: var(--ink-3); max-width: 56ch; line-height: 1.8; }
+
+@media (max-width: 620px) {
+  .wrap { padding: 0 18px 68px; }
+  body { font-size: 16px; }
+  .sec-head { gap: 10px; }
+  .src-tag { margin-left: 0; }
+  .rung { grid-template-columns: 96px 1fr; gap: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+<style>
+@media print {
+  :root {
+    --ground:#FFFFFF; --surface:#FFFFFF; --surface-alt:#F2F5F2; --code-bg:#F2F5F2;
+    --ink:#111111; --ink-2:#404040; --ink-3:#606060;
+    --rule:#CCCCCC; --rule-strong:#999999;
+    --accent:#1A5C3E; --accent-soft:#EAF3EE; --accent-line:#9CC7B0;
+    --low:#4A4A4A;  --low-bg:#EEEEEE;
+    --mod:#6E4A0B;  --mod-bg:#F6EEDC;
+    --high:#7A2718; --high-bg:#F6E4DF;
+    --shadow:none;
+  }
+  body { font-size: 10.5pt; line-height: 1.75; }
+  .wrap { max-width: 100%; padding: 0 0 12pt; }
+  header.mast { padding-top: 0; }
+  section { margin-bottom: 26pt; }
+  h2, h3 { break-after: avoid-page; }
+  .ex, .ladder, .tbl-scroll, .res li, pre, .caption { break-inside: avoid-page; }
+  .tbl-scroll, .pipe-scroll { overflow: visible; }
+  table { min-width: 0; }
+  pre { white-space: pre-wrap; word-break: break-word; }
+  details, summary { border: none; background: none; }
+  a { color: var(--accent); text-decoration: none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">HeadTrack AI &middot; হিসাব ও রিসোর্স</p>
+  <h1>রিভিউ প্রায়োরিটি কীভাবে হিসাব হয়</h1>
+  <p class="standfirst">প্রতিটি প্লেয়ারের Low / Moderate / High স্তর তৈরি হয় পাঁচটি সংকেতের উপর
+  একটি যোগফল-ভিত্তিক স্কোর থেকে, সর্বোচ্চ ৭ পয়েন্ট। নিচে পুরো হিসাবটা, কোডসহ, দুটি বাস্তব
+  উদাহরণ, আর প্রাসঙ্গিক গবেষণা-রিসোর্সের তালিকা।</p>
+  <div class="mast-meta">
+    <span><b>ফাইল</b> <span class="mono">analyze_exposure.py</span></span>
+    <span><b>ফাংশন</b> <span class="mono">review_priority()</span></span>
+    <span><b>লাইন</b> ১৫৩–১৮১</span>
+  </div>
+</header>
+
+<!-- 1 -->
+<section>
+  <div class="sec-head"><span class="sec-num">§১</span><h2>স্কোরিং নিয়ম</h2></div>
+  <div class="col">
+    <p>পাঁচটি স্বাধীন সংকেত। প্রতিটি শর্ত পূরণ হলে স্কোরে পয়েন্ট যোগ হয়। প্রতিটি threshold
+    একটি করে command-line প্যারামিটার, তাই রান-কমান্ড থেকেই সব মান দেখা যায় ও বদলানো যায় —
+    কোনোটিই কোডের ভেতরে লুকানো নেই।</p>
+  </div>
+
+  <div class="tbl-scroll">
+    <table>
+      <thead>
+        <tr><th>সংকেত</th><th>শর্ত</th><th style="text-align:center">পয়েন্ট</th><th>প্যারামিটার (ডিফল্ট)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>মোট এক্সপোজার</td><td class="cond">total_headers &ge; 6</td>
+          <td class="pts">+2</td><td class="cond">--pr_total_high (6)</td>
+        </tr>
+        <tr class="sub">
+          <td>&rdsh; নয়তো</td><td class="cond">total_headers &ge; 3</td>
+          <td class="pts">+1</td><td class="cond">--pr_total_moderate (3)</td>
+        </tr>
+        <tr>
+          <td>সময়ভিত্তিক গুচ্ছ</td><td class="cond">১৫-মিনিটের সর্বোচ্চ rolling &ge; 4</td>
+          <td class="pts">+2</td><td class="cond">--pr_cluster_high (4)</td>
+        </tr>
+        <tr class="sub">
+          <td>&rdsh; নয়তো</td><td class="cond">১৫-মিনিটের সর্বোচ্চ rolling &ge; 2</td>
+          <td class="pts">+1</td><td class="cond">--pr_cluster_moderate (2)</td>
+        </tr>
+        <tr>
+          <td>দ্রুত পরপর হেডার</td><td class="cond">সর্বনিম্ন ব্যবধান &le; ৬০ সেকেন্ড</td>
+          <td class="pts">+1</td><td class="cond">--pr_short_interval_sec (60.0)</td>
+        </tr>
+        <tr>
+          <td>ডিটেকশন অনিশ্চয়তা</td><td class="cond">গড় header confidence &lt; 0.60</td>
+          <td class="pts">+1</td><td class="cond">--pr_low_confidence_cutoff (0.6)</td>
+        </tr>
+        <tr>
+          <td>অ্যাট্রিবিউশন অনিশ্চয়তা</td><td class="cond">ambiguous অনুপাত &gt; 0.30</td>
+          <td class="pts">+1</td><td class="cond">--pr_high_ambiguous_ratio (0.3)</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr><td colspan="2">সর্বোচ্চ সম্ভাব্য স্কোর</td><td class="pts">7</td><td></td></tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <div class="col">
+    <h3>স্কোর থেকে স্তর</h3>
+  </div>
+  <div class="ladder">
+    <div class="rung"><span class="rung-score">স্কোর &ge; 4</span><span class="tier t-high">HIGH</span></div>
+    <div class="rung"><span class="rung-score">স্কোর 2 – 3</span><span class="tier t-mod">MODERATE</span></div>
+    <div class="rung"><span class="rung-score">স্কোর 0 – 1</span><span class="tier t-low">LOW</span></div>
+  </div>
+
+  <div class="col">
+    <h3>প্রথম তিনটি আর শেষ দুটি সংকেত এক জিনিস মাপে না</h3>
+    <p>প্রথম তিনটি মাপে <em>কতটা হেডিং হয়েছে</em>। শেষ দুটি মাপে <em>পাইপলাইন নিজের আউটপুটকে
+    কতটা কম বিশ্বাস করছে</em>। ফলে বাড়তি একটিও হেডার ছাড়াই কেবল ডিটেক্টরের অনিশ্চয়তার কারণে
+    একজন প্লেয়ার Moderate-এ উঠে যেতে পারে। কোডের কমেন্টেই উদ্দেশ্যটা লেখা আছে — "weak detection
+    confidence adds uncertainty, not certainty"।</p>
+    <p>এজন্যই আউটপুটটিকে <strong>ম্যানুয়াল রিভিউয়ের সিরিয়াল</strong> হিসেবে দেখা উচিত ("কোন
+    ক্লিপগুলো একজন মানুষের দেখা দরকার?"), এক্সপোজারের র‍্যাঙ্কিং হিসেবে নয় ("কে সবচেয়ে বেশি হেড
+    করেছে?")। অনিশ্চিত ডেটা আর বেশি এক্সপোজার — দুটোই একটি ক্লিপ রিভিউয়ারের সামনে পাঠানোর
+    বৈধ কারণ।</p>
+  </div>
+</section>
+
+<!-- 2 -->
+<section>
+  <div class="sec-head"><span class="sec-num">§২</span><h2>কোডে যেভাবে আছে</h2></div>
+  <span class="src-tag">scripts/header_analysis/analyze_exposure.py</span>
+  <div class="col">
+    <p>ডিফল্ট মানগুলো কমেন্ট হিসেবে পাশে বসিয়ে দেওয়া হলো।</p>
+  </div>
+
+<pre>def review_priority(total_headers, max_rolling_15min, min_interval_sec,
+                    ambiguous_ratio, avg_header_confidence,
+                    high_attrib_ratio, args) -&gt; str:
+    score = 0
+
+    <span class="cm"># ১. মোট এক্সপোজার</span>
+    if total_headers &gt;= args.pr_total_high:              <span class="cm"># 6</span>
+        score += 2
+    elif total_headers &gt;= args.pr_total_moderate:        <span class="cm"># 3</span>
+        score += 1
+
+    <span class="cm"># ২. সময়ভিত্তিক গুচ্ছ</span>
+    if max_rolling_15min &gt;= args.pr_cluster_high:        <span class="cm"># 4</span>
+        score += 2
+    elif max_rolling_15min &gt;= args.pr_cluster_moderate:  <span class="cm"># 2</span>
+        score += 1
+
+    <span class="cm"># ৩. দ্রুত পরপর হেডার (একটিমাত্র হেডার হলে NaN, নিয়মটি বাদ যায়)</span>
+    if not pd.isna(min_interval_sec) and \
+       min_interval_sec &lt;= args.pr_short_interval_sec:   <span class="cm"># 60.0</span>
+        score += 1
+
+    <span class="cm"># ৪. ডিটেকশন অনিশ্চয়তা</span>
+    if avg_header_confidence &lt; args.pr_low_confidence_cutoff:   <span class="cm"># 0.6</span>
+        score += 1
+
+    <span class="cm"># ৫. অ্যাট্রিবিউশন অনিশ্চয়তা</span>
+    if ambiguous_ratio &gt; args.pr_high_ambiguous_ratio:          <span class="cm"># 0.3</span>
+        score += 1
+
+    if score &gt;= 4:
+        return "High Review Priority"
+    if score &gt;= 2:
+        return "Moderate Review Priority"
+    return "Low Review Priority"</pre>
+
+  <div class="col">
+    <p>ইনপুট পাঁচটি রাশিই আসে <span class="mono">summarize_players()</span> থেকে, যেখানে
+    প্রতিটি <span class="mono">(video_id, track_id)</span> জোড়ার নিশ্চিত হেডার ইভেন্টগুলো
+    একসাথে করে <span class="mono">total</span>, <span class="mono">max_rolling_15min</span>,
+    <span class="mono">min_interval</span>, গড় confidence আর ambiguous অনুপাত বের করা হয়।</p>
+  </div>
+</section>
+
+<!-- 3 -->
+<section>
+  <div class="sec-head"><span class="sec-num">§৩</span><h2>দুটি বাস্তব উদাহরণ</h2></div>
+  <div class="col">
+    <p>দুটি সারিই আসল, নেওয়া হয়েছে
+    <span class="mono">outputs/exposure_analysis/player_exposure_summary.csv</span> থেকে।</p>
+  </div>
+
+  <div class="examples">
+    <div class="ex">
+      <div class="ex-id">Header_h94 &middot; track 18084</div>
+      <div class="ex-rows">
+        <div><span>total_headers = 3</span><span class="ex-pt">&ge;3 &rarr; +1</span></div>
+        <div><span>rolling_15min = 3</span><span class="ex-pt">&ge;2 &rarr; +1</span></div>
+        <div><span>min_interval = 0.87s</span><span class="ex-pt">&le;60 &rarr; +1</span></div>
+        <div><span>গড় conf. = 0.8327</span><span class="ex-zero">&ge;0.6 &rarr; +0</span></div>
+        <div><span>ambig. ratio = 0.000</span><span class="ex-zero">&le;0.3 &rarr; +0</span></div>
+      </div>
+      <div class="ex-total"><span>স্কোর ৩ / ৭</span><span class="tier t-mod">MODERATE</span></div>
+    </div>
+
+    <div class="ex">
+      <div class="ex-id">Header_h37 &middot; track 5476</div>
+      <div class="ex-rows">
+        <div><span>total_headers = 1</span><span class="ex-zero">&lt;3 &rarr; +0</span></div>
+        <div><span>rolling_15min = 1</span><span class="ex-zero">&lt;2 &rarr; +0</span></div>
+        <div><span>min_interval = নেই</span><span class="ex-zero">NaN &rarr; +0</span></div>
+        <div><span>গড় conf. = 0.7303</span><span class="ex-zero">&ge;0.6 &rarr; +0</span></div>
+        <div><span>ambig. ratio = 0.000</span><span class="ex-zero">&le;0.3 &rarr; +0</span></div>
+      </div>
+      <div class="ex-total"><span>স্কোর ০ / ৭</span><span class="tier t-low">LOW</span></div>
+    </div>
+  </div>
+  <p class="caption">একটিমাত্র হেডারের ট্র্যাকে দুটি হেডারের মধ্যেকার ব্যবধান বলে কিছু থাকে না,
+  তাই <span class="mono">min_interval_sec</span> অনির্ধারিত (NaN) থাকে এবং নিয়মটি শূন্য ধরে
+  গোনা হয় না, বরং বাদ দেওয়া হয় — "ব্যবধান নেই" আর "ব্যবধান খুব ছোট" এক কথা নয়।</p>
+</section>
+
+<!-- 4 -->
+<section>
+  <div class="sec-head"><span class="sec-num">§৪</span><h2>রিসোর্স</h2></div>
+  <div class="col">
+    <p>প্রতিটি এন্ট্রি প্রকাশকের রেকর্ডের সঙ্গে মিলিয়ে যাচাই করা। প্রথম ছয়টি হেডিং-এক্সপোজার
+    সংক্রান্ত, শেষ তিনটি পাইপলাইনের কম্পিউটার-ভিশন অংশের জন্য।</p>
+  </div>
+
+  <ol class="res">
+    <li>
+      <div class="res-cite">McCunn R, Beaudouin F, Stewart K, Meyer T, MacLean J. Heading in
+      football: incidence, biomechanical characteristics and the association with acute cognitive
+      function — a three-part systematic review. <i>Sports Medicine</i>. 2021;51:2147–2163.</div>
+      <div class="res-doi"><a href="https://doi.org/10.1007/s40279-021-01492-z">doi.org/10.1007/s40279-021-01492-z</a></div>
+      <div class="res-note">ম্যাচপ্রতি একজন প্লেয়ারের হেডার সংখ্যা <strong>১ থেকে ৯</strong>
+      রিপোর্ট করে। এই পরিসরকে তিন ভাগে ভাগ করলে সীমা দাঁড়ায় ৩.৬৭ আর ৬.৩৩ — কোডের ৩ আর ৬ ঠিক
+      সেখানেই পড়ে। এক্সপোজার threshold দুটি ব্যাখ্যা করার জন্য সবচেয়ে কাজের রেফারেন্স।</div>
+    </li>
+    <li>
+      <div class="res-cite">Lipton ML, Kim N, Zimmerman ME, Kim M, Stewart WF, Branch CA, Lipton RB.
+      Soccer heading is associated with white matter microstructural and cognitive abnormalities.
+      <i>Radiology</i>. 2013;268(3):850–857.</div>
+      <div class="res-doi"><a href="https://doi.org/10.1148/radiol.13130545">doi.org/10.1148/radiol.13130545</a></div>
+      <div class="res-note">হেডিং-এর ডোজ ও মস্তিষ্কের পরিবর্তনের সম্পর্ক নিয়ে সবচেয়ে বেশি
+      উদ্ধৃত গবেষণা — বছরে ৮৮৫–১৫৫০ হেডিং-এ white matter পরিবর্তন, ১৮০০-তে memory score-এ প্রভাব।
+      স্কেল বোঝাতে কাজে লাগে: ম্যাচপ্রতি ৬টি হেডার ৩৮ ম্যাচে বছরে মাত্র ~২৩০, অর্থাৎ এই স্তর
+      কোনো আঘাত-ঝুঁকির হিসাব নয়।</div>
+    </li>
+    <li>
+      <div class="res-cite">Cassoudesalle H, Bildet M, Petit H, Dehail P. Head impacts in
+      semiprofessional male soccer players: a prospective video analysis over one season of
+      competitive games. <i>Brain Injury</i>. 2020;34(12):1685–1690.</div>
+      <div class="res-doi"><a href="https://doi.org/10.1080/02699052.2020.1831067">doi.org/10.1080/02699052.2020.1831067</a></div>
+      <div class="res-note">এক মৌসুম ধরে হাতে ভিডিও দেখে হেডার গোনা — প্রতি ১০০০ প্লেয়ার-ঘণ্টায়
+      ৩৫৮৪.৭। তোমার পাইপলাইন ঠিক এই শ্রমসাধ্য কাজটিই স্বয়ংক্রিয় করছে।</div>
+    </li>
+    <li>
+      <div class="res-cite">Peek K, Ross A, Andersen TE, Meyer T, Dahlen S, Georgieva J,
+      Williamson PR, Clarke M, Serner A. Heading in football: a systematic review of descriptors,
+      definitions, and reporting methods used in heading incidence studies.
+      <i>Science and Medicine in Football</i>. 2024.</div>
+      <div class="res-doi"><a href="https://doi.org/10.1080/24733938.2024.2362191">doi.org/10.1080/24733938.2024.2362191</a></div>
+      <div class="res-note">হেডিং-গবেষণায় "একটি হেডার" কীভাবে সংজ্ঞায়িত ও রিপোর্ট করতে হয় তার
+      পর্যালোচনা। তোমার confirmed-header সংজ্ঞা আর ambiguous ইভেন্ট আলাদা করে দেখানোর
+      সিদ্ধান্তের জন্য।</div>
+    </li>
+    <li>
+      <div class="res-cite">Stewart WF, Kim N, Ifrah CS, Lipton RB, Bachrach TA, Zimmerman ME,
+      Kim M, Lipton ML. Symptoms from repeated intentional and unintentional head impact in
+      soccer players. <i>Neurology</i>. 2017;88(9):901–908.</div>
+      <div class="res-doi"><a href="https://doi.org/10.1212/WNL.0000000000003657">doi.org/10.1212/WNL.0000000000003657</a></div>
+      <div class="res-note">ইচ্ছাকৃত হেডিং আর অনিচ্ছাকৃত মাথার সংঘর্ষ আলাদা করে দেখায় —
+      প্রাসঙ্গিক, কারণ তোমার ডিটেক্টর কেবল বল-থেকে-মাথার সংস্পর্শ গোনে।</div>
+    </li>
+    <li>
+      <div class="res-cite">Patricios JS, Schneider KJ, Dvořák J, et al. Consensus statement on
+      concussion in sport: the 6th International Conference on Concussion in Sport — Amsterdam,
+      October 2022. <i>British Journal of Sports Medicine</i>. 2023;57:695–711.</div>
+      <div class="res-doi"><a href="https://doi.org/10.1136/bjsports-2023-106898">doi.org/10.1136/bjsports-2023-106898</a></div>
+      <div class="res-note">একটি concussion মূল্যায়নে আসলে কী কী লাগে তার আন্তর্জাতিক মানদণ্ড।
+      কেন review priority কোনো চিকিৎসাগত সিদ্ধান্ত নয় — এই সতর্কীকরণের ভিত্তি।</div>
+    </li>
+    <li>
+      <div class="res-cite">Zhang Y, Sun P, Jiang Y, Yu D, Weng F, Yuan Z, Luo P, Liu W, Wang X.
+      ByteTrack: multi-object tracking by associating every detection box.
+      <i>Computer Vision – ECCV 2022</i>, LNCS vol 13682. arXiv:2110.06864.</div>
+      <div class="res-doi"><a href="https://doi.org/10.1007/978-3-031-20047-2_1">doi.org/10.1007/978-3-031-20047-2_1</a></div>
+      <div class="res-note">প্লেয়ার-ট্র্যাকিং ধাপ। মনে রেখো track ID কেবল একটি ভিডিওর ভেতরেই
+      অনন্য, তাই "প্লেয়ার" মানে <span class="mono">(video_id, track_id)</span>।</div>
+    </li>
+    <li>
+      <div class="res-cite">Jocher G, Chaurasia A, Qiu J. Ultralytics YOLOv8. 2023.
+      Software, AGPL-3.0. YOLOv8-এর আনুষ্ঠানিক পেপার নেই; সফটওয়্যার citation-ই দাপ্তরিক রূপ।</div>
+      <div class="res-doi"><a href="https://github.com/ultralytics/ultralytics">github.com/ultralytics/ultralytics</a></div>
+      <div class="res-note">ডিটেকশন ব্যাকবোন — YOLOv8m, তিনটি ক্লাস: player, ball, head।</div>
+    </li>
+    <li>
+      <div class="res-cite">Kalman RE. A new approach to linear filtering and prediction problems.
+      <i>Journal of Basic Engineering</i>. 1960;82(1):35–45.</div>
+      <div class="res-doi"><a href="https://doi.org/10.1115/1.3662552">doi.org/10.1115/1.3662552</a></div>
+      <div class="res-note">বলের গতিপথের ফিল্টার, যা <span class="mono">ball_tracks.csv</span>-এ
+      ডিটেকশনের ফাঁকগুলো পূরণ করে।</div>
+    </li>
+  </ol>
+
+  <details>
+    <summary>BibTeX — নয়টি এন্ট্রি</summary>
+    <div>
+<pre>@article{mccunn2021heading,
+  author  = {McCunn, Robert and Beaudouin, Florian and Stewart, Kerry and Meyer, Tim
+             and MacLean, John},
+  title   = {Heading in Football: Incidence, Biomechanical Characteristics and the
+             Association with Acute Cognitive Function---A Three-Part Systematic Review},
+  journal = {Sports Medicine}, volume = {51}, pages = {2147--2163},
+  year    = {2021}, doi = {10.1007/s40279-021-01492-z}
+}
+
+@article{lipton2013soccer,
+  author  = {Lipton, Michael L. and Kim, Namhee and Zimmerman, Molly E. and Kim, Mimi
+             and Stewart, Walter F. and Branch, Craig A. and Lipton, Richard B.},
+  title   = {Soccer Heading Is Associated with White Matter Microstructural and
+             Cognitive Abnormalities},
+  journal = {Radiology}, volume = {268}, number = {3}, pages = {850--857},
+  year    = {2013}, doi = {10.1148/radiol.13130545}
+}
+
+@article{cassoudesalle2020head,
+  author  = {Cassoudesalle, H{\'e}l{\`e}ne and Bildet, Maxime and Petit, Herv{\'e}
+             and Dehail, Patrick},
+  title   = {Head impacts in semiprofessional male soccer players: a prospective video
+             analysis over one season of competitive games},
+  journal = {Brain Injury}, volume = {34}, number = {12}, pages = {1685--1690},
+  year    = {2020}, doi = {10.1080/02699052.2020.1831067}
+}
+
+@article{peek2024heading,
+  author  = {Peek, Kerry and Ross, Andrew and Andersen, Thor Einar and Meyer, Tim
+             and Dahlen, Sara and Georgieva, Julia and Williamson, Paula R.
+             and Clarke, Mike and Serner, Andreas},
+  title   = {Heading in football: a systematic review of descriptors, definitions,
+             and reporting methods used in heading incidence studies},
+  journal = {Science and Medicine in Football},
+  year    = {2024}, doi = {10.1080/24733938.2024.2362191}
+}
+
+@article{stewart2017symptoms,
+  author  = {Stewart, Walter F. and Kim, Namhee and Ifrah, Chloe S. and Lipton, Richard B.
+             and Bachrach, Tamar A. and Zimmerman, Molly E. and Kim, Mimi and Lipton, Michael L.},
+  title   = {Symptoms from repeated intentional and unintentional head impact in soccer players},
+  journal = {Neurology}, volume = {88}, number = {9}, pages = {901--908},
+  year    = {2017}, doi = {10.1212/WNL.0000000000003657}
+}
+
+@article{patricios2023consensus,
+  author  = {Patricios, Jon S. and Schneider, Kathryn J. and Dvo{\v{r}}{\'a}k, Ji{\v{r}}{\'\i}
+             and others},
+  title   = {Consensus statement on concussion in sport: the 6th International Conference
+             on Concussion in Sport---Amsterdam, October 2022},
+  journal = {British Journal of Sports Medicine}, volume = {57}, pages = {695--711},
+  year    = {2023}, doi = {10.1136/bjsports-2023-106898}
+}
+
+@inproceedings{zhang2022bytetrack,
+  author    = {Zhang, Yifu and Sun, Peize and Jiang, Yi and Yu, Dongdong and Weng, Fucheng
+               and Yuan, Zehuan and Luo, Ping and Liu, Wenyu and Wang, Xinggang},
+  title     = {ByteTrack: Multi-Object Tracking by Associating Every Detection Box},
+  booktitle = {Computer Vision -- ECCV 2022},
+  year      = {2022}, doi = {10.1007/978-3-031-20047-2_1}
+}
+
+@software{jocher2023yolov8,
+  author  = {Jocher, Glenn and Chaurasia, Ayush and Qiu, Jing},
+  title   = {Ultralytics {YOLOv8}},
+  version = {8.0.0}, year = {2023}, license = {AGPL-3.0},
+  url     = {https://github.com/ultralytics/ultralytics}
+}
+
+@article{kalman1960new,
+  author  = {Kalman, Rudolph E.},
+  title   = {A New Approach to Linear Filtering and Prediction Problems},
+  journal = {Journal of Basic Engineering}, volume = {82}, number = {1}, pages = {35--45},
+  year    = {1960}, doi = {10.1115/1.3662552}
+}</pre>
+    </div>
+  </details>
+
+  <footer>
+    <p>§৩-এর সব সংখ্যা সরাসরি
+    <span class="mono">outputs/exposure_analysis/player_exposure_summary.csv</span>-এর বর্তমান
+    বিষয়বস্তু থেকে পড়া, এবং ভিন্ন ফুটেজে পাইপলাইন আবার চালালে বদলাবে। Review priority হলো
+    image-plane ডিটেকশন ও ট্র্যাকিং সংকেত থেকে পাওয়া একটি গবেষণা-উদ্দেশ্যক এক্সপোজার সারাংশ।
+    এটি কোনো চিকিৎসাগত মূল্যায়ন নয় এবং concussion-এর রোগনির্ণয় নয়।</p>
+  </footer>
+</section>
+
+</div>
+<script>
+  // Expand the collapsed BibTeX block when printing or saving to PDF.
+  addEventListener("beforeprint", function () {
+    document.querySelectorAll("details").forEach(function (d) { d.open = true; });
+  });
+</script>
+</body>
+</html>
